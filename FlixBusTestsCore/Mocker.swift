@@ -14,11 +14,14 @@ final class Mocker {
     
     let logger = LoggingMock()
     let network = NetworkSessionMock()
+    let dateTimeFormatter = DateTimeFormattingMock()
     
     func inject() {
         Current.date = Date.init
+        Current.locale = .autoupdatingCurrent
         Current.logger = logger
         Current.network = network
+        Current.dateTimeFormatting = dateTimeFormatter
     }
     
 }
@@ -30,7 +33,12 @@ protocol MockerOwner: AnyObject {
 
 extension MockerOwner {
     
+    var locale: Locale {
+        get { Current.locale }
+        set { Current.locale = newValue }
+    }
     var logger: LoggingMock { mocker.logger }
     var network: NetworkSessionMock { mocker.network }
+    var dateTimeFormatter: DateTimeFormattingMock { mocker.dateTimeFormatter }
     
 }
