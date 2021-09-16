@@ -1,0 +1,1242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1709474170130F3B224B1199 /* Pods_FlixBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB97F745E3605A7DE4BB229 /* Pods_FlixBus.framework */; };
+		20138E1C26EF62FB00A358D5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1B26EF62FB00A358D5 /* Config.swift */; };
+		20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1E26EF63A600A358D5 /* R.generated.swift */; };
+		20138E2126EF63AF00A358D5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2026EF63AF00A358D5 /* Environment.swift */; };
+		20138E2426EF643800A358D5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2326EF643800A358D5 /* Logging.swift */; };
+		20138E2626EF644600A358D5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2526EF644600A358D5 /* Logger.swift */; };
+		20138E2826EF645A00A358D5 /* OSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2726EF645A00A358D5 /* OSLogger.swift */; };
+		20138E2B26EF64A300A358D5 /* NetworkParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2A26EF64A300A358D5 /* NetworkParameterEncoding.swift */; };
+		20138E2D26EF64B200A358D5 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2C26EF64B200A358D5 /* NetworkRequest.swift */; };
+		20138E2F26EF64C200A358D5 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2E26EF64C200A358D5 /* NetworkResponse.swift */; };
+		20138E3126EF64CE00A358D5 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3026EF64CE00A358D5 /* NetworkOperation.swift */; };
+		20138E3326EF64E100A358D5 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3226EF64E100A358D5 /* NetworkSession.swift */; };
+		20138E3526EF64F700A358D5 /* AlamofireNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3426EF64F700A358D5 /* AlamofireNetworkSession.swift */; };
+		20138E3C26EF657B00A358D5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3B26EF657B00A358D5 /* UIView+Extensions.swift */; };
+		20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3F26EF661200A358D5 /* Mock.generated.swift */; };
+		20138E4126EF661200A358D5 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3F26EF661200A358D5 /* Mock.generated.swift */; };
+		206B871D26EF66A600EA9C60 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3D26EF65B100A358D5 /* Mocker.swift */; };
+		206B871E26EF66A600EA9C60 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3D26EF65B100A358D5 /* Mocker.swift */; };
+		206B872126EF671700EA9C60 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B872026EF671600EA9C60 /* BaseTestCase.swift */; };
+		206B872426EF674900EA9C60 /* BaseSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B872326EF674900EA9C60 /* BaseSnapshotTestCase.swift */; };
+		206B872626EF696B00EA9C60 /* NetworkAuthorizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B872526EF696A00EA9C60 /* NetworkAuthorizing.swift */; };
+		206B872826EF6A6300EA9C60 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B872726EF6A6300EA9C60 /* Result+Extensions.swift */; };
+		206B872A26EF71D900EA9C60 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206B872926EF71D800EA9C60 /* Colors.xcassets */; };
+		20884A4526EF5DEC006A1AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20884A4426EF5DEC006A1AB0 /* AppDelegate.swift */; };
+		20884A4726EF5DEC006A1AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20884A4626EF5DEC006A1AB0 /* SceneDelegate.swift */; };
+		20884A4C26EF5DEC006A1AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20884A4A26EF5DEC006A1AB0 /* Main.storyboard */; };
+		20884A4E26EF5DEC006A1AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20884A4D26EF5DEC006A1AB0 /* Assets.xcassets */; };
+		20884A5126EF5DEC006A1AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20884A4F26EF5DEC006A1AB0 /* LaunchScreen.storyboard */; };
+		20884A6726EF5DED006A1AB0 /* FlixBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20884A6626EF5DED006A1AB0 /* FlixBusUITests.swift */; };
+		20A3BBF326EFC98C0098F097 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBF226EFC98C0098F097 /* Station.swift */; };
+		20A3BBF726EFC9DF0098F097 /* StationsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBF626EFC9DF0098F097 /* StationsRepository.swift */; };
+		20A3BBF926EFCC7B0098F097 /* StationTimetableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBF826EFCC7B0098F097 /* StationTimetableElement.swift */; };
+		20A3BBFB26EFCCA90098F097 /* StationTimetableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBFA26EFCCA90098F097 /* StationTimetableRepository.swift */; };
+		20A3BBFE26EFCE4A0098F097 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBFD26EFCE4A0098F097 /* DateTime.swift */; };
+		20A3BC0326F087720098F097 /* DateTimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BC0226F087720098F097 /* DateTimeFormatting.swift */; };
+		20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BC0426F091CA0098F097 /* DateTimeTests.swift */; };
+		54B843723782B5E275840B1E /* Pods_FlixBus_FlixBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */; };
+		6E5BE49FB9B54E873F991BC9 /* Pods_FlixBusSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */; };
+		F3A8EDE062B498293B57E028 /* Pods_FlixBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20884A5826EF5DED006A1AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20884A3926EF5DEC006A1AB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20884A4026EF5DEC006A1AB0;
+			remoteInfo = FlixBus;
+		};
+		20884A6326EF5DED006A1AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20884A3926EF5DEC006A1AB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20884A4026EF5DEC006A1AB0;
+			remoteInfo = FlixBus;
+		};
+		20884A7D26EF5E21006A1AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20884A3926EF5DEC006A1AB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20884A4026EF5DEC006A1AB0;
+			remoteInfo = FlixBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17156B084718C938212BA173 /* Pods-FlixBusSnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusSnapshotTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixBusSnapshotTests/Pods-FlixBusSnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		20138E1B26EF62FB00A358D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		20138E1E26EF63A600A358D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		20138E2026EF63AF00A358D5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		20138E2326EF643800A358D5 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		20138E2526EF644600A358D5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		20138E2726EF645A00A358D5 /* OSLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogger.swift; sourceTree = "<group>"; };
+		20138E2A26EF64A300A358D5 /* NetworkParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParameterEncoding.swift; sourceTree = "<group>"; };
+		20138E2C26EF64B200A358D5 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		20138E2E26EF64C200A358D5 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		20138E3026EF64CE00A358D5 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		20138E3226EF64E100A358D5 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		20138E3426EF64F700A358D5 /* AlamofireNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkSession.swift; sourceTree = "<group>"; };
+		20138E3B26EF657B00A358D5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		20138E3D26EF65B100A358D5 /* Mocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
+		20138E3F26EF661200A358D5 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		206B872026EF671600EA9C60 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		206B872326EF674900EA9C60 /* BaseSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSnapshotTestCase.swift; sourceTree = "<group>"; };
+		206B872526EF696A00EA9C60 /* NetworkAuthorizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAuthorizing.swift; sourceTree = "<group>"; };
+		206B872726EF6A6300EA9C60 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
+		206B872926EF71D800EA9C60 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		20884A4126EF5DEC006A1AB0 /* FlixBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20884A4426EF5DEC006A1AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20884A4626EF5DEC006A1AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		20884A4B26EF5DEC006A1AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20884A4D26EF5DEC006A1AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20884A5026EF5DEC006A1AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20884A5226EF5DEC006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20884A5726EF5DED006A1AB0 /* FlixBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20884A5D26EF5DED006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20884A6226EF5DED006A1AB0 /* FlixBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20884A6626EF5DED006A1AB0 /* FlixBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixBusUITests.swift; sourceTree = "<group>"; };
+		20884A6826EF5DED006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20884A7826EF5E21006A1AB0 /* FlixBusSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20884A7C26EF5E21006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20A3BBF226EFC98C0098F097 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		20A3BBF626EFC9DF0098F097 /* StationsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsRepository.swift; sourceTree = "<group>"; };
+		20A3BBF826EFCC7B0098F097 /* StationTimetableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElement.swift; sourceTree = "<group>"; };
+		20A3BBFA26EFCCA90098F097 /* StationTimetableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableRepository.swift; sourceTree = "<group>"; };
+		20A3BBFD26EFCE4A0098F097 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		20A3BC0226F087720098F097 /* DateTimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeFormatting.swift; sourceTree = "<group>"; };
+		20A3BC0426F091CA0098F097 /* DateTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTests.swift; sourceTree = "<group>"; };
+		249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus.release.xcconfig"; path = "Target Support Files/Pods-FlixBus/Pods-FlixBus.release.xcconfig"; sourceTree = "<group>"; };
+		2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus-FlixBusUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBus_FlixBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52652D91C96475380612B90F /* Pods-FlixBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusTests.release.xcconfig"; path = "Target Support Files/Pods-FlixBusTests/Pods-FlixBusTests.release.xcconfig"; sourceTree = "<group>"; };
+		76D0030F5188618B2D9E7740 /* Pods-FlixBusSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusSnapshotTests.release.xcconfig"; path = "Target Support Files/Pods-FlixBusSnapshotTests/Pods-FlixBusSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
+		7AB9B143DC1CD6C0548BBF6A /* Pods-FlixBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus.debug.xcconfig"; path = "Target Support Files/Pods-FlixBus/Pods-FlixBus.debug.xcconfig"; sourceTree = "<group>"; };
+		8C3518AEE44B6E2DC89DA354 /* Pods-FlixBus-FlixBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus-FlixBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C874E440ABAB51E1F3C1B68 /* Pods-FlixBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixBusTests/Pods-FlixBusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB97F745E3605A7DE4BB229 /* Pods_FlixBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBusSnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20884A3E26EF5DEC006A1AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1709474170130F3B224B1199 /* Pods_FlixBus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A5426EF5DED006A1AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A8EDE062B498293B57E028 /* Pods_FlixBusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A5F26EF5DED006A1AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B843723782B5E275840B1E /* Pods_FlixBus_FlixBusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A7526EF5E21006A1AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5BE49FB9B54E873F991BC9 /* Pods_FlixBusSnapshotTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20138E1626EF621600A358D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				20138E1B26EF62FB00A358D5 /* Config.swift */,
+				20138E2026EF63AF00A358D5 /* Environment.swift */,
+				20138E1E26EF63A600A358D5 /* R.generated.swift */,
+				20138E2226EF642700A358D5 /* Logging */,
+				20138E2926EF648900A358D5 /* Network */,
+				20138E3726EF651A00A358D5 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		20138E2226EF642700A358D5 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				20138E2326EF643800A358D5 /* Logging.swift */,
+				20138E2526EF644600A358D5 /* Logger.swift */,
+				20138E2726EF645A00A358D5 /* OSLogger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		20138E2926EF648900A358D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				20138E2A26EF64A300A358D5 /* NetworkParameterEncoding.swift */,
+				20138E2C26EF64B200A358D5 /* NetworkRequest.swift */,
+				20138E2E26EF64C200A358D5 /* NetworkResponse.swift */,
+				20138E3026EF64CE00A358D5 /* NetworkOperation.swift */,
+				20138E3226EF64E100A358D5 /* NetworkSession.swift */,
+				206B872526EF696A00EA9C60 /* NetworkAuthorizing.swift */,
+				20138E3426EF64F700A358D5 /* AlamofireNetworkSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		20138E3726EF651A00A358D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20138E3B26EF657B00A358D5 /* UIView+Extensions.swift */,
+				206B872726EF6A6300EA9C60 /* Result+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20138E3826EF652E00A358D5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				20138E3926EF653800A358D5 /* Stations */,
+				20138E3A26EF653F00A358D5 /* Station */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		20138E3926EF653800A358D5 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		20138E3A26EF653F00A358D5 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Station;
+			sourceTree = "<group>";
+		};
+		206B871F26EF670100EA9C60 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				206B872026EF671600EA9C60 /* BaseTestCase.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		206B872226EF672400EA9C60 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				206B872326EF674900EA9C60 /* BaseSnapshotTestCase.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		20884A3826EF5DEC006A1AB0 = {
+			isa = PBXGroup;
+			children = (
+				20884A4326EF5DEC006A1AB0 /* FlixBus */,
+				20884A8226EF5F46006A1AB0 /* FlixBusTestsCore */,
+				20884A5A26EF5DED006A1AB0 /* FlixBusTests */,
+				20884A7926EF5E21006A1AB0 /* FlixBusSnapshotTests */,
+				20884A6526EF5DED006A1AB0 /* FlixBusUITests */,
+				20884A4226EF5DEC006A1AB0 /* Products */,
+				C81EAAB02B964B88EDA94D89 /* Pods */,
+				85A9A812507309198164CA7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20884A4226EF5DEC006A1AB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20884A4126EF5DEC006A1AB0 /* FlixBus.app */,
+				20884A5726EF5DED006A1AB0 /* FlixBusTests.xctest */,
+				20884A6226EF5DED006A1AB0 /* FlixBusUITests.xctest */,
+				20884A7826EF5E21006A1AB0 /* FlixBusSnapshotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20884A4326EF5DEC006A1AB0 /* FlixBus */ = {
+			isa = PBXGroup;
+			children = (
+				20138E1626EF621600A358D5 /* Core */,
+				20884A4426EF5DEC006A1AB0 /* AppDelegate.swift */,
+				20884A4626EF5DEC006A1AB0 /* SceneDelegate.swift */,
+				20884A4A26EF5DEC006A1AB0 /* Main.storyboard */,
+				20138E3826EF652E00A358D5 /* Features */,
+				20A3BBF026EFC9010098F097 /* Models */,
+				20884A4D26EF5DEC006A1AB0 /* Assets.xcassets */,
+				206B872926EF71D800EA9C60 /* Colors.xcassets */,
+				20884A4F26EF5DEC006A1AB0 /* LaunchScreen.storyboard */,
+				20884A5226EF5DEC006A1AB0 /* Info.plist */,
+			);
+			path = FlixBus;
+			sourceTree = "<group>";
+		};
+		20884A5A26EF5DED006A1AB0 /* FlixBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				206B871F26EF670100EA9C60 /* Core */,
+				20A3BC0626F091D30098F097 /* Models */,
+				20884A5D26EF5DED006A1AB0 /* Info.plist */,
+			);
+			path = FlixBusTests;
+			sourceTree = "<group>";
+		};
+		20884A6526EF5DED006A1AB0 /* FlixBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20884A6626EF5DED006A1AB0 /* FlixBusUITests.swift */,
+				20884A6826EF5DED006A1AB0 /* Info.plist */,
+			);
+			path = FlixBusUITests;
+			sourceTree = "<group>";
+		};
+		20884A7926EF5E21006A1AB0 /* FlixBusSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				206B872226EF672400EA9C60 /* Core */,
+				20884A7C26EF5E21006A1AB0 /* Info.plist */,
+			);
+			path = FlixBusSnapshotTests;
+			sourceTree = "<group>";
+		};
+		20884A8226EF5F46006A1AB0 /* FlixBusTestsCore */ = {
+			isa = PBXGroup;
+			children = (
+				20138E3D26EF65B100A358D5 /* Mocker.swift */,
+				20138E3F26EF661200A358D5 /* Mock.generated.swift */,
+			);
+			path = FlixBusTestsCore;
+			sourceTree = "<group>";
+		};
+		20A3BBF026EFC9010098F097 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20A3BBFF26EFCE620098F097 /* DateTime */,
+				20A3BBF126EFC9840098F097 /* Entities */,
+				20A3BBF526EFC9B80098F097 /* NetworkRouters */,
+				20A3BBF426EFC9B00098F097 /* Repositories */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20A3BBF126EFC9840098F097 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				20A3BBF226EFC98C0098F097 /* Station.swift */,
+				20A3BBF826EFCC7B0098F097 /* StationTimetableElement.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		20A3BBF426EFC9B00098F097 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				20A3BBF626EFC9DF0098F097 /* StationsRepository.swift */,
+				20A3BBFA26EFCCA90098F097 /* StationTimetableRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		20A3BBF526EFC9B80098F097 /* NetworkRouters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkRouters;
+			sourceTree = "<group>";
+		};
+		20A3BBFF26EFCE620098F097 /* DateTime */ = {
+			isa = PBXGroup;
+			children = (
+				20A3BBFD26EFCE4A0098F097 /* DateTime.swift */,
+				20A3BC0226F087720098F097 /* DateTimeFormatting.swift */,
+			);
+			path = DateTime;
+			sourceTree = "<group>";
+		};
+		20A3BC0626F091D30098F097 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20A3BC0726F091DA0098F097 /* DateTime */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20A3BC0726F091DA0098F097 /* DateTime */ = {
+			isa = PBXGroup;
+			children = (
+				20A3BC0426F091CA0098F097 /* DateTimeTests.swift */,
+			);
+			path = DateTime;
+			sourceTree = "<group>";
+		};
+		85A9A812507309198164CA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB97F745E3605A7DE4BB229 /* Pods_FlixBus.framework */,
+				4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */,
+				9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */,
+				CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C81EAAB02B964B88EDA94D89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AB9B143DC1CD6C0548BBF6A /* Pods-FlixBus.debug.xcconfig */,
+				249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */,
+				8C3518AEE44B6E2DC89DA354 /* Pods-FlixBus-FlixBusUITests.debug.xcconfig */,
+				2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */,
+				17156B084718C938212BA173 /* Pods-FlixBusSnapshotTests.debug.xcconfig */,
+				76D0030F5188618B2D9E7740 /* Pods-FlixBusSnapshotTests.release.xcconfig */,
+				8C874E440ABAB51E1F3C1B68 /* Pods-FlixBusTests.debug.xcconfig */,
+				52652D91C96475380612B90F /* Pods-FlixBusTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20884A4026EF5DEC006A1AB0 /* FlixBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20884A6B26EF5DED006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBus" */;
+			buildPhases = (
+				0A37BC0281D812DC1745D2A1 /* [CP] Check Pods Manifest.lock */,
+				20138E1926EF626500A358D5 /* [R.swift] Configure */,
+				20884A3D26EF5DEC006A1AB0 /* Sources */,
+				20884A3E26EF5DEC006A1AB0 /* Frameworks */,
+				20884A3F26EF5DEC006A1AB0 /* Resources */,
+				9B06C1BEF037BFA0C6B43963 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlixBus;
+			productName = FlixBus;
+			productReference = 20884A4126EF5DEC006A1AB0 /* FlixBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20884A5626EF5DED006A1AB0 /* FlixBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20884A6E26EF5DED006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBusTests" */;
+			buildPhases = (
+				B55E5EDE149349F7D271AF9D /* [CP] Check Pods Manifest.lock */,
+				20138E1A26EF62CF00A358D5 /* [SwiftyMocky] Configure */,
+				20884A5326EF5DED006A1AB0 /* Sources */,
+				20884A5426EF5DED006A1AB0 /* Frameworks */,
+				20884A5526EF5DED006A1AB0 /* Resources */,
+				4366A339DAC98EA724792774 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20884A5926EF5DED006A1AB0 /* PBXTargetDependency */,
+			);
+			name = FlixBusTests;
+			productName = FlixBusTests;
+			productReference = 20884A5726EF5DED006A1AB0 /* FlixBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20884A6126EF5DED006A1AB0 /* FlixBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20884A7126EF5DED006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBusUITests" */;
+			buildPhases = (
+				D7E571F4BC48DBD109F7DF72 /* [CP] Check Pods Manifest.lock */,
+				20884A5E26EF5DED006A1AB0 /* Sources */,
+				20884A5F26EF5DED006A1AB0 /* Frameworks */,
+				20884A6026EF5DED006A1AB0 /* Resources */,
+				19329E711226D42ADA8A4D01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20884A6426EF5DED006A1AB0 /* PBXTargetDependency */,
+			);
+			name = FlixBusUITests;
+			productName = FlixBusUITests;
+			productReference = 20884A6226EF5DED006A1AB0 /* FlixBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		20884A7726EF5E21006A1AB0 /* FlixBusSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20884A7F26EF5E21006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBusSnapshotTests" */;
+			buildPhases = (
+				8AB1BE975D24A9741B2DC40C /* [CP] Check Pods Manifest.lock */,
+				20138E1D26EF633A00A358D5 /* [SwiftyMocky] Configure */,
+				20884A7426EF5E21006A1AB0 /* Sources */,
+				20884A7526EF5E21006A1AB0 /* Frameworks */,
+				20884A7626EF5E21006A1AB0 /* Resources */,
+				E7F957341FC3866C71B20CF7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20884A7E26EF5E21006A1AB0 /* PBXTargetDependency */,
+			);
+			name = FlixBusSnapshotTests;
+			productName = FlixBusSnapshotTests;
+			productReference = 20884A7826EF5E21006A1AB0 /* FlixBusSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20884A3926EF5DEC006A1AB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					20884A4026EF5DEC006A1AB0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					20884A5626EF5DED006A1AB0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 20884A4026EF5DEC006A1AB0;
+					};
+					20884A6126EF5DED006A1AB0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 20884A4026EF5DEC006A1AB0;
+					};
+					20884A7726EF5E21006A1AB0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 20884A4026EF5DEC006A1AB0;
+					};
+				};
+			};
+			buildConfigurationList = 20884A3C26EF5DEC006A1AB0 /* Build configuration list for PBXProject "FlixBus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20884A3826EF5DEC006A1AB0;
+			productRefGroup = 20884A4226EF5DEC006A1AB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20884A4026EF5DEC006A1AB0 /* FlixBus */,
+				20884A5626EF5DED006A1AB0 /* FlixBusTests */,
+				20884A7726EF5E21006A1AB0 /* FlixBusSnapshotTests */,
+				20884A6126EF5DED006A1AB0 /* FlixBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20884A3F26EF5DEC006A1AB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20884A5126EF5DEC006A1AB0 /* LaunchScreen.storyboard in Resources */,
+				206B872A26EF71D900EA9C60 /* Colors.xcassets in Resources */,
+				20884A4E26EF5DEC006A1AB0 /* Assets.xcassets in Resources */,
+				20884A4C26EF5DEC006A1AB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A5526EF5DED006A1AB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A6026EF5DED006A1AB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A7626EF5E21006A1AB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A37BC0281D812DC1745D2A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixBus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19329E711226D42ADA8A4D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20138E1926EF626500A358D5 /* [R.swift] Configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "[R.swift] Configure";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/FlixBus/Core/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/FlixBus/Core/R.generated.swift\"\n";
+		};
+		20138E1A26EF62CF00A358D5 /* [SwiftyMocky] Configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$PROJECT_NAME",
+			);
+			name = "[SwiftyMocky] Configure";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/FlixBusTestsCommon/Mock.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Generate mock files\nPods/Sourcery/bin/sourcery --config FlixBusTestsCore/mocky.yml\n";
+		};
+		20138E1D26EF633A00A358D5 /* [SwiftyMocky] Configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$PROJECT_NAME",
+			);
+			name = "[SwiftyMocky] Configure";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Generate mock files\nPods/Sourcery/bin/sourcery --config FlixBusTestsCore/mocky.yml\n";
+		};
+		4366A339DAC98EA724792774 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBusTests/Pods-FlixBusTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBusTests/Pods-FlixBusTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixBusTests/Pods-FlixBusTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB1BE975D24A9741B2DC40C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixBusSnapshotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B06C1BEF037BFA0C6B43963 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBus/Pods-FlixBus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBus/Pods-FlixBus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixBus/Pods-FlixBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B55E5EDE149349F7D271AF9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixBusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E571F4BC48DBD109F7DF72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixBus-FlixBusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F957341FC3866C71B20CF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBusSnapshotTests/Pods-FlixBusSnapshotTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixBusSnapshotTests/Pods-FlixBusSnapshotTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixBusSnapshotTests/Pods-FlixBusSnapshotTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20884A3D26EF5DEC006A1AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20884A4526EF5DEC006A1AB0 /* AppDelegate.swift in Sources */,
+				206B872626EF696B00EA9C60 /* NetworkAuthorizing.swift in Sources */,
+				20138E2B26EF64A300A358D5 /* NetworkParameterEncoding.swift in Sources */,
+				20138E2426EF643800A358D5 /* Logging.swift in Sources */,
+				20884A4726EF5DEC006A1AB0 /* SceneDelegate.swift in Sources */,
+				20A3BBF726EFC9DF0098F097 /* StationsRepository.swift in Sources */,
+				20138E3126EF64CE00A358D5 /* NetworkOperation.swift in Sources */,
+				20138E2D26EF64B200A358D5 /* NetworkRequest.swift in Sources */,
+				20A3BC0326F087720098F097 /* DateTimeFormatting.swift in Sources */,
+				20138E2826EF645A00A358D5 /* OSLogger.swift in Sources */,
+				20138E3326EF64E100A358D5 /* NetworkSession.swift in Sources */,
+				20A3BBFE26EFCE4A0098F097 /* DateTime.swift in Sources */,
+				20A3BBFB26EFCCA90098F097 /* StationTimetableRepository.swift in Sources */,
+				20138E3526EF64F700A358D5 /* AlamofireNetworkSession.swift in Sources */,
+				20A3BBF326EFC98C0098F097 /* Station.swift in Sources */,
+				20138E1C26EF62FB00A358D5 /* Config.swift in Sources */,
+				20138E2626EF644600A358D5 /* Logger.swift in Sources */,
+				206B872826EF6A6300EA9C60 /* Result+Extensions.swift in Sources */,
+				20A3BBF926EFCC7B0098F097 /* StationTimetableElement.swift in Sources */,
+				20138E2F26EF64C200A358D5 /* NetworkResponse.swift in Sources */,
+				20138E3C26EF657B00A358D5 /* UIView+Extensions.swift in Sources */,
+				20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */,
+				20138E2126EF63AF00A358D5 /* Environment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A5326EF5DED006A1AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206B872126EF671700EA9C60 /* BaseTestCase.swift in Sources */,
+				20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */,
+				20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */,
+				206B871D26EF66A600EA9C60 /* Mocker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A5E26EF5DED006A1AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20884A6726EF5DED006A1AB0 /* FlixBusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20884A7426EF5E21006A1AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206B872426EF674900EA9C60 /* BaseSnapshotTestCase.swift in Sources */,
+				20138E4126EF661200A358D5 /* Mock.generated.swift in Sources */,
+				206B871E26EF66A600EA9C60 /* Mocker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20884A5926EF5DED006A1AB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20884A4026EF5DEC006A1AB0 /* FlixBus */;
+			targetProxy = 20884A5826EF5DED006A1AB0 /* PBXContainerItemProxy */;
+		};
+		20884A6426EF5DED006A1AB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20884A4026EF5DEC006A1AB0 /* FlixBus */;
+			targetProxy = 20884A6326EF5DED006A1AB0 /* PBXContainerItemProxy */;
+		};
+		20884A7E26EF5E21006A1AB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20884A4026EF5DEC006A1AB0 /* FlixBus */;
+			targetProxy = 20884A7D26EF5E21006A1AB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20884A4A26EF5DEC006A1AB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20884A4B26EF5DEC006A1AB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20884A4F26EF5DEC006A1AB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20884A5026EF5DEC006A1AB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20884A6926EF5DED006A1AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20884A6A26EF5DED006A1AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20884A6C26EF5DED006A1AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB9B143DC1CD6C0548BBF6A /* Pods-FlixBus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20884A6D26EF5DED006A1AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20884A6F26EF5DED006A1AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C874E440ABAB51E1F3C1B68 /* Pods-FlixBusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixBus.app/FlixBus";
+			};
+			name = Debug;
+		};
+		20884A7026EF5DED006A1AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52652D91C96475380612B90F /* Pods-FlixBusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixBus.app/FlixBus";
+			};
+			name = Release;
+		};
+		20884A7226EF5DED006A1AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3518AEE44B6E2DC89DA354 /* Pods-FlixBus-FlixBusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlixBus;
+			};
+			name = Debug;
+		};
+		20884A7326EF5DED006A1AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlixBus;
+			};
+			name = Release;
+		};
+		20884A8026EF5E21006A1AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17156B084718C938212BA173 /* Pods-FlixBusSnapshotTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBusSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixBus.app/FlixBus";
+			};
+			name = Debug;
+		};
+		20884A8126EF5E21006A1AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D0030F5188618B2D9E7740 /* Pods-FlixBusSnapshotTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
+				INFOPLIST_FILE = FlixBusSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixBus.app/FlixBus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20884A3C26EF5DEC006A1AB0 /* Build configuration list for PBXProject "FlixBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20884A6926EF5DED006A1AB0 /* Debug */,
+				20884A6A26EF5DED006A1AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20884A6B26EF5DED006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20884A6C26EF5DED006A1AB0 /* Debug */,
+				20884A6D26EF5DED006A1AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20884A6E26EF5DED006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20884A6F26EF5DED006A1AB0 /* Debug */,
+				20884A7026EF5DED006A1AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20884A7126EF5DED006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20884A7226EF5DED006A1AB0 /* Debug */,
+				20884A7326EF5DED006A1AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20884A7F26EF5E21006A1AB0 /* Build configuration list for PBXNativeTarget "FlixBusSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20884A8026EF5E21006A1AB0 /* Debug */,
+				20884A8126EF5E21006A1AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20884A3926EF5DEC006A1AB0 /* Project object */;
+}

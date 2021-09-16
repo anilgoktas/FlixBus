@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.4.3)
+  - iOSSnapshotTestCase (7.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 7.0.0)
+  - iOSSnapshotTestCase/Core (7.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (7.0.0):
+    - iOSSnapshotTestCase/Core
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Sourcery (1.0.3)
+  - SwiftyJSON (5.0.1)
+  - SwiftyMocky (4.0.4):
+    - Sourcery (~> 1.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - iOSSnapshotTestCase
+  - R.swift
+  - SwiftyJSON
+  - SwiftyMocky
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - iOSSnapshotTestCase
+    - R.swift
+    - R.swift.Library
+    - Sourcery
+    - SwiftyJSON
+    - SwiftyMocky
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  iOSSnapshotTestCase: 63402a5707db9c4103b6cc3f04c76e981fff7952
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Sourcery: 70a6048014bd4f37ea80e6bd4354d47bf3b760e1
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyMocky: 1fb3ceca9ded134dad4da58a0f20023d7f685ccf
+
+PODFILE CHECKSUM: 6bf110b257dc81391bf67cfb46b909c3d6880879
+
+COCOAPODS: 1.10.1

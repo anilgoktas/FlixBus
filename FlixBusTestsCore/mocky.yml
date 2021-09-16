@@ -1,0 +1,14 @@
+sources:
+  include:
+    - ./../FlixBus
+templates:
+  - ./../Pods/SwiftyMocky/Sources/SwiftyMocky
+output:
+  ./
+args:
+  testable:
+    - FlixBus
+  import:
+    - SwiftyJSON
+    - os.log
+    - Combine
