@@ -12,6 +12,7 @@ struct Environment {
     // MARK: - Stored Properties
     
     var date: () -> Date = Date.init
+    var locale: Locale = .autoupdatingCurrent
     var dateTimeFormatting: DateTimeFormatting = DateTimeFormatter()
     var logger: Logging = Logger()
     var network: NetworkSession = AlamofireNetworkSession(authorizer: NetworkAuthorizer.authorized)
