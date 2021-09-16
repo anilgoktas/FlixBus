@@ -7,7 +7,6 @@
 
 import XCTest
 @testable import FlixBus
-import SwiftyJSON
 
 final class DateTimeTests: BaseTestCase {
     
@@ -76,6 +75,19 @@ final class DateTimeTests: BaseTestCase {
         
         // Then
         XCTAssertNil(subject)
+    }
+    
+    func test_initUsingDecodedJSON() throws {
+        // Given
+        let originalSubject = try DateTime.makeStub()
+        let json = JSON(originalSubject.dictionaryValue)
+        
+        // When
+        let subject = try XCTUnwrap(DateTime(json: json))
+        
+        // Then
+        XCTAssertEqual(originalSubject.date.timeIntervalSince1970, subject.date.timeIntervalSince1970)
+        XCTAssertEqual(originalSubject.timeZone, subject.timeZone)
     }
     
 }

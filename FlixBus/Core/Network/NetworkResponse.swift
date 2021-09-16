@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 public protocol NetworkResponse {
     init(json: JSON) throws

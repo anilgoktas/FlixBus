@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 import Alamofire
 import Combine
 

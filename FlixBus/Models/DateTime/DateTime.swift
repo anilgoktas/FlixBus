@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 struct DateTime {
     
@@ -33,6 +32,13 @@ struct DateTime {
         let timestamp = json[CodingKeys.date.rawValue].intValue
         let timeZoneAbbreviation = json[CodingKeys.timeZoneAbbreviation.rawValue].stringValue
         self.init(timestamp: timestamp, timeZoneAbbreviation: timeZoneAbbreviation)
+    }
+    
+    var dictionaryValue: [String: Any] {
+        var dict = [String: Any]()
+        dict[CodingKeys.date.rawValue] = date.timeIntervalSince1970
+        dict[CodingKeys.timeZoneAbbreviation.rawValue] = timeZone.abbreviation()
+        return dict
     }
     
 }
