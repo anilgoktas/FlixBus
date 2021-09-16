@@ -31,6 +31,10 @@
 		200D7F6826F39BE300656C20 /* StationTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F6726F39BE300656C20 /* StationTableCellViewModel.swift */; };
 		200D7F6D26F3B89600656C20 /* StationTableViewCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F6C26F3B89600656C20 /* StationTableViewCellSnapshotTests.swift */; };
 		200D7F7226F3C11000656C20 /* StationTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7126F3C11000656C20 /* StationTableCellViewModelTests.swift */; };
+		200D7F7426F3C19400656C20 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7326F3C19400656C20 /* StationsViewController.swift */; };
+		200D7F7626F3C1CD00656C20 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7526F3C1CD00656C20 /* StationsViewModel.swift */; };
+		200D7F7826F3DBF400656C20 /* StationsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7726F3DBF400656C20 /* StationsViewModelTests.swift */; };
+		200D7F7A26F3E1CA00656C20 /* StationsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7926F3E1CA00656C20 /* StationsViewControllerTests.swift */; };
 		20138E1C26EF62FB00A358D5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1B26EF62FB00A358D5 /* Config.swift */; };
 		20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1E26EF63A600A358D5 /* R.generated.swift */; };
 		20138E2126EF63AF00A358D5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2026EF63AF00A358D5 /* Environment.swift */; };
@@ -116,6 +120,10 @@
 		200D7F6726F39BE300656C20 /* StationTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableCellViewModel.swift; sourceTree = "<group>"; };
 		200D7F6C26F3B89600656C20 /* StationTableViewCellSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCellSnapshotTests.swift; sourceTree = "<group>"; };
 		200D7F7126F3C11000656C20 /* StationTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableCellViewModelTests.swift; sourceTree = "<group>"; };
+		200D7F7326F3C19400656C20 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		200D7F7526F3C1CD00656C20 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		200D7F7726F3DBF400656C20 /* StationsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModelTests.swift; sourceTree = "<group>"; };
+		200D7F7926F3E1CA00656C20 /* StationsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewControllerTests.swift; sourceTree = "<group>"; };
 		20138E1B26EF62FB00A358D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		20138E1E26EF63A600A358D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		20138E2026EF63AF00A358D5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -288,6 +296,8 @@
 		200D7F6F26F3C0FC00656C20 /* Stations */ = {
 			isa = PBXGroup;
 			children = (
+				200D7F7726F3DBF400656C20 /* StationsViewModelTests.swift */,
+				200D7F7926F3E1CA00656C20 /* StationsViewControllerTests.swift */,
 				200D7F7026F3C10200656C20 /* StationTableViewCell */,
 			);
 			path = Stations;
@@ -361,6 +371,8 @@
 		20138E3926EF653800A358D5 /* Stations */ = {
 			isa = PBXGroup;
 			children = (
+				200D7F7526F3C1CD00656C20 /* StationsViewModel.swift */,
+				200D7F7326F3C19400656C20 /* StationsViewController.swift */,
 				200D7F6026F399F500656C20 /* StationTableViewCell */,
 			);
 			path = Stations;
@@ -966,8 +978,10 @@
 				20A3BC0326F087720098F097 /* DateTimeFormatting.swift in Sources */,
 				200D7F4326F3496100656C20 /* SwiftyJSON+Extensions.swift in Sources */,
 				200D7F6326F39A1300656C20 /* StationTableViewCell.swift in Sources */,
+				200D7F7626F3C1CD00656C20 /* StationsViewModel.swift in Sources */,
 				200D7F4B26F350A500656C20 /* StationTimetable.swift in Sources */,
 				200D7F5F26F3931100656C20 /* Date+Extensions.swift in Sources */,
+				200D7F7426F3C19400656C20 /* StationsViewController.swift in Sources */,
 				20138E2826EF645A00A358D5 /* OSLogger.swift in Sources */,
 				20138E3326EF64E100A358D5 /* NetworkSession.swift in Sources */,
 				20A3BBFE26EFCE4A0098F097 /* DateTime.swift in Sources */,
@@ -1002,9 +1016,11 @@
 				200D7F3C26F33D9300656C20 /* DateTimeFormattingTests.swift in Sources */,
 				20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */,
 				200D7F4626F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,
+				200D7F7826F3DBF400656C20 /* StationsViewModelTests.swift in Sources */,
 				20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */,
 				200D7F5926F3709100656C20 /* StationTimetableTests.swift in Sources */,
 				200D7F3F26F3488A00656C20 /* StationTests.swift in Sources */,
+				200D7F7A26F3E1CA00656C20 /* StationsViewControllerTests.swift in Sources */,
 				206B871D26EF66A600EA9C60 /* Mocker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

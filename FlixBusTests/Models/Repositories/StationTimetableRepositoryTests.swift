@@ -13,7 +13,7 @@ final class StationTimetableRepositoryTests: BaseTestCase {
     
     // MARK: - Properties
     
-    let networkRouter = StationTimetableNetworkRoutingMock()
+    private let networkRouter = StationTimetableNetworkRoutingMock()
     
     // MARK: - Factory
     
@@ -112,8 +112,8 @@ extension StationTimetableRepositoryTests {
         // Then
         XCTAssertTrue(subject.arrivals.isEmpty)
         XCTAssertEqual(subject.departures.count, 2)
-        let firstArrivalElement = try XCTUnwrap(subject.arrivals.first)
-        let secondArrivalElement = try XCTUnwrap(subject.arrivals.last)
+        let firstArrivalElement = try XCTUnwrap(subject.departures.first)
+        let secondArrivalElement = try XCTUnwrap(subject.departures.last)
         XCTAssertEqual(firstArrivalElement.dateTime.date.timeIntervalSince1970, olderDateTime.date.timeIntervalSince1970)
         XCTAssertEqual(secondArrivalElement.dateTime.date.timeIntervalSince1970, closerDateTime.date.timeIntervalSince1970)
     }
