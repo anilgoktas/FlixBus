@@ -22,6 +22,10 @@ final class DateTimeFormatter: DateTimeFormatting {
     private var dateStringFormatters = [TimeZone: DateFormatter]()
     private var timeStringFormatters = [TimeZone: DateFormatter]()
     
+    // MARK: Injected
+    
+    private var locale: Locale { Current.locale }
+    
     // MARK: - Formatting
     
     func dateString(for dateTime: DateTime) -> String {
@@ -48,6 +52,7 @@ final class DateTimeFormatter: DateTimeFormatting {
     
     private func makeDateStringFormatter(timeZone: TimeZone) -> DateFormatter {
         let formatter = DateFormatter()
+        formatter.locale = locale
         formatter.timeZone = timeZone
         formatter.dateStyle = .short
         formatter.timeStyle = .none
@@ -56,6 +61,7 @@ final class DateTimeFormatter: DateTimeFormatting {
     
     private func makeTimeStringFormatter(timeZone: TimeZone) -> DateFormatter {
         let formatter = DateFormatter()
+        formatter.locale = locale
         formatter.timeZone = timeZone
         formatter.dateStyle = .none
         formatter.timeStyle = .short

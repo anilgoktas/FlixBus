@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1709474170130F3B224B1199 /* Pods_FlixBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB97F745E3605A7DE4BB229 /* Pods_FlixBus.framework */; };
+		200D7F3C26F33D9300656C20 /* DateTimeFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F3B26F33D9300656C20 /* DateTimeFormattingTests.swift */; };
 		20138E1C26EF62FB00A358D5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1B26EF62FB00A358D5 /* Config.swift */; };
 		20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1E26EF63A600A358D5 /* R.generated.swift */; };
 		20138E2126EF63AF00A358D5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2026EF63AF00A358D5 /* Environment.swift */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		17156B084718C938212BA173 /* Pods-FlixBusSnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBusSnapshotTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixBusSnapshotTests/Pods-FlixBusSnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		200D7F3B26F33D9300656C20 /* DateTimeFormattingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeFormattingTests.swift; sourceTree = "<group>"; };
 		20138E1B26EF62FB00A358D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		20138E1E26EF63A600A358D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		20138E2026EF63AF00A358D5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				20A3BC0426F091CA0098F097 /* DateTimeTests.swift */,
+				200D7F3B26F33D9300656C20 /* DateTimeFormattingTests.swift */,
 			);
 			path = DateTime;
 			sourceTree = "<group>";
@@ -836,6 +839,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				206B872126EF671700EA9C60 /* BaseTestCase.swift in Sources */,
+				200D7F3C26F33D9300656C20 /* DateTimeFormattingTests.swift in Sources */,
 				20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */,
 				20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */,
 				206B871D26EF66A600EA9C60 /* Mocker.swift in Sources */,
