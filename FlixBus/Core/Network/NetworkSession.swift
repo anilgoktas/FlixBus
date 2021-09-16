@@ -27,7 +27,7 @@ extension NetworkSession {
     }
     
     public func perform<Operation: NetworkOperation>(
-        _ operation: Operation.Type,
+        operation: Operation.Type,
         request: Operation.Request
     ) -> AnyPublisher<Operation.Response, Error> {
         perform(request: request)

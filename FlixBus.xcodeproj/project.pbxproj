@@ -14,6 +14,18 @@
 		200D7F4326F3496100656C20 /* SwiftyJSON+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F4226F3496100656C20 /* SwiftyJSON+Extensions.swift */; };
 		200D7F4626F34BFD00656C20 /* DateTime+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F4526F34BFD00656C20 /* DateTime+Extensions.swift */; };
 		200D7F4726F34BFD00656C20 /* DateTime+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F4526F34BFD00656C20 /* DateTime+Extensions.swift */; };
+		200D7F4926F34E6700656C20 /* StationTimetableNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F4826F34E6700656C20 /* StationTimetableNetworkRouter.swift */; };
+		200D7F4B26F350A500656C20 /* StationTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F4A26F350A500656C20 /* StationTimetable.swift */; };
+		200D7F4E26F3598500656C20 /* StationTimetableNetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F4D26F3598500656C20 /* StationTimetableNetworkRouterTests.swift */; };
+		200D7F5126F36B6200656C20 /* StationTimetableRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5026F36B6200656C20 /* StationTimetableRepositoryTests.swift */; };
+		200D7F5326F36C1700656C20 /* Station+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5226F36C1700656C20 /* Station+Extensions.swift */; };
+		200D7F5426F36C1E00656C20 /* Station+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5226F36C1700656C20 /* Station+Extensions.swift */; };
+		200D7F5626F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5526F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift */; };
+		200D7F5726F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5526F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift */; };
+		200D7F5926F3709100656C20 /* StationTimetableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5826F3709100656C20 /* StationTimetableTests.swift */; };
+		200D7F5C26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5B26F391AC00656C20 /* StationTimetableElement+Extensions.swift */; };
+		200D7F5D26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5B26F391AC00656C20 /* StationTimetableElement+Extensions.swift */; };
+		200D7F5F26F3931100656C20 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F5E26F3931100656C20 /* Date+Extensions.swift */; };
 		20138E1C26EF62FB00A358D5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1B26EF62FB00A358D5 /* Config.swift */; };
 		20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1E26EF63A600A358D5 /* R.generated.swift */; };
 		20138E2126EF63AF00A358D5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2026EF63AF00A358D5 /* Environment.swift */; };
@@ -85,6 +97,15 @@
 		200D7F4026F3492F00656C20 /* StationTimetableElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTests.swift; sourceTree = "<group>"; };
 		200D7F4226F3496100656C20 /* SwiftyJSON+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Extensions.swift"; sourceTree = "<group>"; };
 		200D7F4526F34BFD00656C20 /* DateTime+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateTime+Extensions.swift"; sourceTree = "<group>"; };
+		200D7F4826F34E6700656C20 /* StationTimetableNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableNetworkRouter.swift; sourceTree = "<group>"; };
+		200D7F4A26F350A500656C20 /* StationTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetable.swift; sourceTree = "<group>"; };
+		200D7F4D26F3598500656C20 /* StationTimetableNetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableNetworkRouterTests.swift; sourceTree = "<group>"; };
+		200D7F5026F36B6200656C20 /* StationTimetableRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableRepositoryTests.swift; sourceTree = "<group>"; };
+		200D7F5226F36C1700656C20 /* Station+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+Extensions.swift"; sourceTree = "<group>"; };
+		200D7F5526F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationTimetableNetworkRouter+Extensions.swift"; sourceTree = "<group>"; };
+		200D7F5826F3709100656C20 /* StationTimetableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableTests.swift; sourceTree = "<group>"; };
+		200D7F5B26F391AC00656C20 /* StationTimetableElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StationTimetableElement+Extensions.swift"; sourceTree = "<group>"; };
+		200D7F5E26F3931100656C20 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		20138E1B26EF62FB00A358D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		20138E1E26EF63A600A358D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		20138E2026EF63AF00A358D5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -179,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				200D7F3E26F3488A00656C20 /* StationTests.swift */,
+				200D7F5826F3709100656C20 /* StationTimetableTests.swift */,
 				200D7F4026F3492F00656C20 /* StationTimetableElementTests.swift */,
 			);
 			path = Entities;
@@ -188,8 +210,27 @@
 			isa = PBXGroup;
 			children = (
 				200D7F4526F34BFD00656C20 /* DateTime+Extensions.swift */,
+				200D7F5226F36C1700656C20 /* Station+Extensions.swift */,
+				200D7F5526F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift */,
+				200D7F5B26F391AC00656C20 /* StationTimetableElement+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		200D7F4C26F3597600656C20 /* NetworkRouters */ = {
+			isa = PBXGroup;
+			children = (
+				200D7F4D26F3598500656C20 /* StationTimetableNetworkRouterTests.swift */,
+			);
+			path = NetworkRouters;
+			sourceTree = "<group>";
+		};
+		200D7F4F26F36AFD00656C20 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				200D7F5026F36B6200656C20 /* StationTimetableRepositoryTests.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		20138E1626EF621600A358D5 /* Core */ = {
@@ -235,6 +276,7 @@
 				20138E3B26EF657B00A358D5 /* UIView+Extensions.swift */,
 				206B872726EF6A6300EA9C60 /* Result+Extensions.swift */,
 				200D7F4226F3496100656C20 /* SwiftyJSON+Extensions.swift */,
+				200D7F5E26F3931100656C20 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				20A3BBF226EFC98C0098F097 /* Station.swift */,
+				200D7F4A26F350A500656C20 /* StationTimetable.swift */,
 				20A3BBF826EFCC7B0098F097 /* StationTimetableElement.swift */,
 			);
 			path = Entities;
@@ -390,6 +433,7 @@
 		20A3BBF526EFC9B80098F097 /* NetworkRouters */ = {
 			isa = PBXGroup;
 			children = (
+				200D7F4826F34E6700656C20 /* StationTimetableNetworkRouter.swift */,
 			);
 			path = NetworkRouters;
 			sourceTree = "<group>";
@@ -408,6 +452,8 @@
 			children = (
 				200D7F3D26F3487D00656C20 /* Entities */,
 				20A3BC0726F091DA0098F097 /* DateTime */,
+				200D7F4C26F3597600656C20 /* NetworkRouters */,
+				200D7F4F26F36AFD00656C20 /* Repositories */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -847,6 +893,8 @@
 				20138E2D26EF64B200A358D5 /* NetworkRequest.swift in Sources */,
 				20A3BC0326F087720098F097 /* DateTimeFormatting.swift in Sources */,
 				200D7F4326F3496100656C20 /* SwiftyJSON+Extensions.swift in Sources */,
+				200D7F4B26F350A500656C20 /* StationTimetable.swift in Sources */,
+				200D7F5F26F3931100656C20 /* Date+Extensions.swift in Sources */,
 				20138E2826EF645A00A358D5 /* OSLogger.swift in Sources */,
 				20138E3326EF64E100A358D5 /* NetworkSession.swift in Sources */,
 				20A3BBFE26EFCE4A0098F097 /* DateTime.swift in Sources */,
@@ -861,6 +909,7 @@
 				20138E3C26EF657B00A358D5 /* UIView+Extensions.swift in Sources */,
 				20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */,
 				20138E2126EF63AF00A358D5 /* Environment.swift in Sources */,
+				200D7F4926F34E6700656C20 /* StationTimetableNetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,12 +917,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200D7F5626F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift in Sources */,
+				200D7F5C26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */,
+				200D7F5126F36B6200656C20 /* StationTimetableRepositoryTests.swift in Sources */,
+				200D7F4E26F3598500656C20 /* StationTimetableNetworkRouterTests.swift in Sources */,
+				200D7F5326F36C1700656C20 /* Station+Extensions.swift in Sources */,
 				200D7F4126F3492F00656C20 /* StationTimetableElementTests.swift in Sources */,
 				206B872126EF671700EA9C60 /* BaseTestCase.swift in Sources */,
 				200D7F3C26F33D9300656C20 /* DateTimeFormattingTests.swift in Sources */,
 				20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */,
 				200D7F4626F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,
 				20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */,
+				200D7F5926F3709100656C20 /* StationTimetableTests.swift in Sources */,
 				200D7F3F26F3488A00656C20 /* StationTests.swift in Sources */,
 				206B871D26EF66A600EA9C60 /* Mocker.swift in Sources */,
 			);
@@ -891,9 +946,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200D7F5726F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift in Sources */,
+				200D7F5D26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */,
 				200D7F4726F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,
 				206B872426EF674900EA9C60 /* BaseSnapshotTestCase.swift in Sources */,
 				20138E4126EF661200A358D5 /* Mock.generated.swift in Sources */,
+				200D7F5426F36C1E00656C20 /* Station+Extensions.swift in Sources */,
 				206B871E26EF66A600EA9C60 /* Mocker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Also known as `ride`, `trip` or `line`.
 struct StationTimetableElement {
     
     // MARK: - Properties

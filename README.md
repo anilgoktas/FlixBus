@@ -24,6 +24,7 @@
 ### Project Structure
 
 - There are three testing targets where shared codes & resources placed in the `FlixBusTestsCore` folder.
+- Only `Main.storyboard` is used since we only have two screens which are stations and station detail.
 
 ### Core Folder
 
@@ -41,6 +42,7 @@
 
 - Stations/station screen segmented control with arrival / departure mode?
 
-- Sort by timestamp
-- Check possible dates, format and use that string as a key
-- Use strings as headers and its elements as table cells
+- Station ViewModel
+    - Check possible dates, format and use that string as a key
+    - Use strings as headers and its elements as table cells
+    - Arrival/departure enum `ScheduleType`
