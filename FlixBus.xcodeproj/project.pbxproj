@@ -63,7 +63,6 @@
 		20884A4C26EF5DEC006A1AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20884A4A26EF5DEC006A1AB0 /* Main.storyboard */; };
 		20884A4E26EF5DEC006A1AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20884A4D26EF5DEC006A1AB0 /* Assets.xcassets */; };
 		20884A5126EF5DEC006A1AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20884A4F26EF5DEC006A1AB0 /* LaunchScreen.storyboard */; };
-		20884A6726EF5DED006A1AB0 /* FlixBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20884A6626EF5DED006A1AB0 /* FlixBusUITests.swift */; };
 		20A3BBF326EFC98C0098F097 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBF226EFC98C0098F097 /* Station.swift */; };
 		20A3BBF726EFC9DF0098F097 /* StationsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBF626EFC9DF0098F097 /* StationsRepository.swift */; };
 		20A3BBF926EFCC7B0098F097 /* StationTimetableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBF826EFCC7B0098F097 /* StationTimetableElement.swift */; };
@@ -74,6 +73,8 @@
 		20B243A726F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A626F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift */; };
 		20B243A926F48D1500324F6F /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */; };
 		20B243AA26F48D1700324F6F /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */; };
+		20B243AE26F493E800324F6F /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243AD26F493E800324F6F /* FlowCoordinator.swift */; };
+		20EB9F0626F49FBA001C0E18 /* BaseUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F0526F49FBA001C0E18 /* BaseUITestCase.swift */; };
 		54B843723782B5E275840B1E /* Pods_FlixBus_FlixBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */; };
 		6E5BE49FB9B54E873F991BC9 /* Pods_FlixBusSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */; };
 		F3A8EDE062B498293B57E028 /* Pods_FlixBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */; };
@@ -159,7 +160,6 @@
 		20884A5726EF5DED006A1AB0 /* FlixBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20884A5D26EF5DED006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20884A6226EF5DED006A1AB0 /* FlixBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20884A6626EF5DED006A1AB0 /* FlixBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixBusUITests.swift; sourceTree = "<group>"; };
 		20884A6826EF5DED006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20884A7826EF5E21006A1AB0 /* FlixBusSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixBusSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20884A7C26EF5E21006A1AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +172,8 @@
 		20A3BC0426F091CA0098F097 /* DateTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTests.swift; sourceTree = "<group>"; };
 		20B243A626F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		20B243AD26F493E800324F6F /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		20EB9F0526F49FBA001C0E18 /* BaseUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITestCase.swift; sourceTree = "<group>"; };
 		249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus.release.xcconfig"; path = "Target Support Files/Pods-FlixBus/Pods-FlixBus.release.xcconfig"; sourceTree = "<group>"; };
 		2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus-FlixBusUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBus_FlixBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				200D7F7C26F3E5AB00656C20 /* BaseNavigationController.swift */,
+				20B243AD26F493E800324F6F /* FlowCoordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -475,7 +478,7 @@
 		20884A6526EF5DED006A1AB0 /* FlixBusUITests */ = {
 			isa = PBXGroup;
 			children = (
-				20884A6626EF5DED006A1AB0 /* FlixBusUITests.swift */,
+				20EB9F0426F49FAA001C0E18 /* Core */,
 				20884A6826EF5DED006A1AB0 /* Info.plist */,
 			);
 			path = FlixBusUITests;
@@ -566,6 +569,14 @@
 				200D7F3B26F33D9300656C20 /* DateTimeFormattingTests.swift */,
 			);
 			path = DateTime;
+			sourceTree = "<group>";
+		};
+		20EB9F0426F49FAA001C0E18 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				20EB9F0526F49FBA001C0E18 /* BaseUITestCase.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		85A9A812507309198164CA7F /* Frameworks */ = {
@@ -697,6 +708,7 @@
 					};
 					20884A6126EF5DED006A1AB0 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1300;
 						TestTargetID = 20884A4026EF5DEC006A1AB0;
 					};
 					20884A7726EF5E21006A1AB0 = {
@@ -1008,6 +1020,7 @@
 				20138E3526EF64F700A358D5 /* AlamofireNetworkSession.swift in Sources */,
 				20A3BBF326EFC98C0098F097 /* Station.swift in Sources */,
 				20138E1C26EF62FB00A358D5 /* Config.swift in Sources */,
+				20B243AE26F493E800324F6F /* FlowCoordinator.swift in Sources */,
 				200D7F6826F39BE300656C20 /* StationTableCellViewModel.swift in Sources */,
 				20138E2626EF644600A358D5 /* Logger.swift in Sources */,
 				206B872826EF6A6300EA9C60 /* Result+Extensions.swift in Sources */,
@@ -1049,7 +1062,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20884A6726EF5DED006A1AB0 /* FlixBusUITests.swift in Sources */,
+				20EB9F0626F49FBA001C0E18 /* BaseUITestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1319,6 +1332,7 @@
 			baseConfigurationReference = 8C3518AEE44B6E2DC89DA354 /* Pods-FlixBus-FlixBusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
 				INFOPLIST_FILE = FlixBusUITests/Info.plist;
@@ -1329,6 +1343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anilgoktas.FlixBusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FlixBus;
@@ -1340,6 +1355,7 @@
 			baseConfigurationReference = 2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CWJ7KK9KZ;
 				INFOPLIST_FILE = FlixBusUITests/Info.plist;

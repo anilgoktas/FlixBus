@@ -11,6 +11,7 @@ import Foundation
 protocol StationsViewModelProtocol {
     var numberOfRows: Int { get }
     
+    func station(at index: Int) -> Station
     func cellViewModel(at index: Int) -> StationTableCellViewModel
 }
 
@@ -32,8 +33,10 @@ final class StationsViewModel: StationsViewModelProtocol {
     
     var numberOfRows: Int { stations.count }
     
+    func station(at index: Int) -> Station { stations[index] }
+    
     func cellViewModel(at index: Int) -> StationTableCellViewModel {
-        let station = stations[index]
+        let station = station(at: index)
         return StationTableCellViewModel(station: station)
     }
     

@@ -40,6 +40,21 @@ extension StationsViewModelTests {
         XCTAssertEqual(subject.numberOfRows, 1)
     }
     
+    func test_station() {
+        // Given
+        let subject = makeSubject()
+        let stations: [Station] = [.munichZOB, .berlinZOB]
+        repository.given(.stations(getter: stations))
+        
+        // When
+        let firstStation = subject.station(at: 0)
+        let secondStation = subject.station(at: 1)
+        
+        // Then
+        XCTAssertEqual(firstStation.name, stations.first?.name)
+        XCTAssertEqual(secondStation.name, stations.last?.name)
+    }
+    
     func test_cellViewModel() throws {
         // Given
         let subject = makeSubject()

@@ -13,6 +13,7 @@ struct Environment {
     
     var date: () -> Date = Date.init
     var locale: Locale = .autoupdatingCurrent
+    var flowCoordinator: FlowCoordinating = FlowCoordinator()
     var dateTimeFormatting: DateTimeFormatting = DateTimeFormatter()
     var logger: Logging = Logger()
     var network: NetworkSession = AlamofireNetworkSession(authorizer: NetworkAuthorizer.authorized)

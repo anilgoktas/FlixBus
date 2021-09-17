@@ -12,6 +12,7 @@ final class Mocker {
     
     // MARK: - Properties
     
+    let flowCoordinator = FlowCoordinatingMock()
     let logger = LoggingMock()
     let network = NetworkSessionMock()
     let dateTimeFormatter = DateTimeFormattingMock()
@@ -19,6 +20,7 @@ final class Mocker {
     func inject() {
         Current.date = Date.init
         Current.locale = .autoupdatingCurrent
+        Current.flowCoordinator = flowCoordinator
         Current.logger = logger
         Current.network = network
         Current.dateTimeFormatting = dateTimeFormatter
@@ -37,6 +39,8 @@ extension MockerOwner {
         get { Current.locale }
         set { Current.locale = newValue }
     }
+    
+    var flowCoordinator: FlowCoordinatingMock { mocker.flowCoordinator }
     var logger: LoggingMock { mocker.logger }
     var network: NetworkSessionMock { mocker.network }
     var dateTimeFormatter: DateTimeFormattingMock { mocker.dateTimeFormatter }

@@ -42,6 +42,8 @@ extension StationsViewControllerTests {
         
         // Then
         XCTAssertNotNil(subject.tableView)
+        XCTAssertTrue(subject.tableView.dataSource === subject)
+        XCTAssertTrue(subject.tableView.delegate === subject)
     }
     
     func test_tableViewDataSource() throws {
@@ -60,12 +62,36 @@ extension StationsViewControllerTests {
             subject.tableView(subject.tableView, numberOfRowsInSection: 0)
         )
         let cell = try XCTUnwrap(
-            subject.tableView(
+            subject.tableView.dataSource?.tableView(
                 subject.tableView,
                 cellForRowAt: IndexPath(row: 0, section: 0)
             ) as? StationTableViewCell
         )
         XCTAssertEqual(cellViewModel.name, cell.viewModel?.name)
+    }
+    
+    func test_didSelectStation() throws {
+        // Given
+        let station = Station.berlinZOB
+        viewModel.given(.numberOfRows(getter: 1))
+        viewModel.given(.cellViewModel(at: .any, willReturn: .init(station: station)))
+        viewModel.given(.station(at: .any, willReturn: station))
+        let subject = makeSubject()
+        
+        var didSelectStation: Station?
+        subject.didSelectStation = { station in
+            didSelectStation = station
+        }
+        
+        // When
+        subject.tableView.delegate?.tableView?(
+            subject.tableView,
+            didSelectRowAt: IndexPath(row: 0, section: 0)
+        )
+        
+        // Then
+        let selectedStation = try XCTUnwrap(didSelectStation)
+        XCTAssertEqual(station.id, selectedStation.id)
     }
     
 }

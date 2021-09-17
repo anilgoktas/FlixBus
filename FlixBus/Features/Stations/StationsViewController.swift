@@ -15,8 +15,8 @@ final class StationsViewController: UIViewController {
     
     // MARK: - Properties
     
-    #warning("remove default init after implementing flow controller")
-    private(set) var viewModel: StationsViewModelProtocol = StationsViewModel()
+    private(set) var viewModel: StationsViewModelProtocol!
+    var didSelectStation: ((Station) -> Void)?
     
     // MARK: - View Life Cycle
     
@@ -56,7 +56,8 @@ extension StationsViewController: UITableViewDataSource {
 extension StationsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        #warning("FlowController delegation")
+        let station = viewModel.station(at: indexPath.row)
+        didSelectStation?(station)
     }
     
 }
