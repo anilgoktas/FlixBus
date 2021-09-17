@@ -8,7 +8,7 @@
 import Foundation
 
 // sourcery: AutoMockable
-protocol StationViewModelProtocol {
+protocol StationViewModelProtocol: AnyObject {
     var title: String { get }
     var scheduleType: StationViewModel.ScheduleType { get set }
     var onUpdate: (() -> Void)? { get set }
