@@ -11,13 +11,14 @@ final class StationsViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private(set) var tableView: UITableView!
     
     // MARK: - Properties
     
-    lazy var viewModel: StationsViewModelProtocol = StationsViewModel()
+    #warning("remove default init after implementing flow controller")
+    private(set) var viewModel: StationsViewModelProtocol = StationsViewModel()
     
-    // MARK: - Life Cycle
+    // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -35,6 +35,7 @@
 		200D7F7626F3C1CD00656C20 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7526F3C1CD00656C20 /* StationsViewModel.swift */; };
 		200D7F7826F3DBF400656C20 /* StationsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7726F3DBF400656C20 /* StationsViewModelTests.swift */; };
 		200D7F7A26F3E1CA00656C20 /* StationsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7926F3E1CA00656C20 /* StationsViewControllerTests.swift */; };
+		200D7F7D26F3E5AB00656C20 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D7F7C26F3E5AB00656C20 /* BaseNavigationController.swift */; };
 		20138E1C26EF62FB00A358D5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1B26EF62FB00A358D5 /* Config.swift */; };
 		20138E1F26EF63A600A358D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E1E26EF63A600A358D5 /* R.generated.swift */; };
 		20138E2126EF63AF00A358D5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E2026EF63AF00A358D5 /* Environment.swift */; };
@@ -70,6 +71,9 @@
 		20A3BBFE26EFCE4A0098F097 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BBFD26EFCE4A0098F097 /* DateTime.swift */; };
 		20A3BC0326F087720098F097 /* DateTimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BC0226F087720098F097 /* DateTimeFormatting.swift */; };
 		20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3BC0426F091CA0098F097 /* DateTimeTests.swift */; };
+		20B243A726F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A626F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift */; };
+		20B243A926F48D1500324F6F /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */; };
+		20B243AA26F48D1700324F6F /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */; };
 		54B843723782B5E275840B1E /* Pods_FlixBus_FlixBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */; };
 		6E5BE49FB9B54E873F991BC9 /* Pods_FlixBusSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */; };
 		F3A8EDE062B498293B57E028 /* Pods_FlixBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */; };
@@ -124,6 +128,7 @@
 		200D7F7526F3C1CD00656C20 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
 		200D7F7726F3DBF400656C20 /* StationsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModelTests.swift; sourceTree = "<group>"; };
 		200D7F7926F3E1CA00656C20 /* StationsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewControllerTests.swift; sourceTree = "<group>"; };
+		200D7F7C26F3E5AB00656C20 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		20138E1B26EF62FB00A358D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		20138E1E26EF63A600A358D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		20138E2026EF63AF00A358D5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -165,6 +170,8 @@
 		20A3BBFD26EFCE4A0098F097 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		20A3BC0226F087720098F097 /* DateTimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeFormatting.swift; sourceTree = "<group>"; };
 		20A3BC0426F091CA0098F097 /* DateTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTests.swift; sourceTree = "<group>"; };
+		20B243A626F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
+		20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus.release.xcconfig"; path = "Target Support Files/Pods-FlixBus/Pods-FlixBus.release.xcconfig"; sourceTree = "<group>"; };
 		2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus-FlixBusUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBus_FlixBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +238,7 @@
 				200D7F5226F36C1700656C20 /* Station+Extensions.swift */,
 				200D7F5526F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift */,
 				200D7F5B26F391AC00656C20 /* StationTimetableElement+Extensions.swift */,
+				20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				200D7F6B26F3B87C00656C20 /* StationTableViewCell */,
+				20B243A626F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift */,
 			);
 			path = Stations;
 			sourceTree = "<group>";
@@ -309,6 +318,14 @@
 				200D7F7126F3C11000656C20 /* StationTableCellViewModelTests.swift */,
 			);
 			path = StationTableViewCell;
+			sourceTree = "<group>";
+		};
+		200D7F7B26F3E5A100656C20 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				200D7F7C26F3E5AB00656C20 /* BaseNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		20138E1626EF621600A358D5 /* Core */ = {
@@ -362,6 +379,7 @@
 		20138E3826EF652E00A358D5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				200D7F7B26F3E5A100656C20 /* Base */,
 				20138E3926EF653800A358D5 /* Stations */,
 				20138E3A26EF653F00A358D5 /* Station */,
 			);
@@ -818,7 +836,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/FlixBusTestsCommon/Mock.generated.swift",
+				"$(SRCROOT)/FlixBusTestsCore/Mock.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -975,6 +993,7 @@
 				20A3BBF726EFC9DF0098F097 /* StationsRepository.swift in Sources */,
 				20138E3126EF64CE00A358D5 /* NetworkOperation.swift in Sources */,
 				20138E2D26EF64B200A358D5 /* NetworkRequest.swift in Sources */,
+				200D7F7D26F3E5AB00656C20 /* BaseNavigationController.swift in Sources */,
 				20A3BC0326F087720098F097 /* DateTimeFormatting.swift in Sources */,
 				200D7F4326F3496100656C20 /* SwiftyJSON+Extensions.swift in Sources */,
 				200D7F6326F39A1300656C20 /* StationTableViewCell.swift in Sources */,
@@ -1009,6 +1028,7 @@
 				200D7F5C26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */,
 				200D7F5126F36B6200656C20 /* StationTimetableRepositoryTests.swift in Sources */,
 				200D7F4E26F3598500656C20 /* StationTimetableNetworkRouterTests.swift in Sources */,
+				20B243AA26F48D1700324F6F /* XCTestCase+Extensions.swift in Sources */,
 				200D7F5326F36C1700656C20 /* Station+Extensions.swift in Sources */,
 				200D7F4126F3492F00656C20 /* StationTimetableElementTests.swift in Sources */,
 				200D7F7226F3C11000656C20 /* StationTableCellViewModelTests.swift in Sources */,
@@ -1037,7 +1057,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B243A726F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift in Sources */,
 				200D7F5726F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift in Sources */,
+				20B243A926F48D1500324F6F /* XCTestCase+Extensions.swift in Sources */,
 				200D7F5D26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */,
 				200D7F6D26F3B89600656C20 /* StationTableViewCellSnapshotTests.swift in Sources */,
 				200D7F4726F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,
