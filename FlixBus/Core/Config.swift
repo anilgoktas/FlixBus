@@ -12,11 +12,11 @@ enum Config {
     /// API
     enum Endpoint {
         #if DEBUG
-        static let urlString = "https://global.api-dev.flixbus.com/"
+        static let urlString = "https://global.api-dev.flixbus.com"
         #elseif STAGING
-        static let urlString = "https://global.api-dev.flixbus.com/"
+        static let urlString = "https://global.api-dev.flixbus.com"
         #else
-        static let urlString = "https://global.api-dev.flixbus.com/"
+        static let urlString = "https://global.api-dev.flixbus.com"
         #endif
         static let url = URL(string: urlString)!
         

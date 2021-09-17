@@ -34,7 +34,7 @@ extension StationTimetableNetworkRouter {
             let stationID: Station.ID
             
             var baseURL: URL { Config.Endpoint.url }
-            var relativePath: String? { "mobile/v1/network/station/\(stationID)/timetable.json " }
+            var relativePath: String? { "mobile/v1/network/station/\(stationID)/timetable.json" }
             var method: HTTPMethod { .get }
             var parameterEncoding: NetworkParameterEncoding { NetworkParameterEncoder.url }
         }
