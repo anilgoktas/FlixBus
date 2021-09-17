@@ -86,6 +86,7 @@
 		20EB9F2026F4C831001C0E18 /* StationTimetableElementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EB9F1E26F4C831001C0E18 /* StationTimetableElementTableViewCell.xib */; };
 		20EB9F2226F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F2126F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift */; };
 		20EB9F2526F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F2426F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift */; };
+		20FF488026F510A6006C3C95 /* StationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */; };
 		54B843723782B5E275840B1E /* Pods_FlixBus_FlixBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */; };
 		6E5BE49FB9B54E873F991BC9 /* Pods_FlixBusSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */; };
 		F3A8EDE062B498293B57E028 /* Pods_FlixBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */; };
@@ -196,6 +197,7 @@
 		20EB9F1E26F4C831001C0E18 /* StationTimetableElementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTimetableElementTableViewCell.xib; sourceTree = "<group>"; };
 		20EB9F2126F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTableCellViewModel.swift; sourceTree = "<group>"; };
 		20EB9F2426F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTableCellViewModelTests.swift; sourceTree = "<group>"; };
+		20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewControllerTests.swift; sourceTree = "<group>"; };
 		249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus.release.xcconfig"; path = "Target Support Files/Pods-FlixBus/Pods-FlixBus.release.xcconfig"; sourceTree = "<group>"; };
 		2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus-FlixBusUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBus_FlixBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -628,6 +630,7 @@
 		20EB9F1426F4C3ED001C0E18 /* Station */ = {
 			isa = PBXGroup;
 			children = (
+				20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */,
 				20EB9F2326F4D3F1001C0E18 /* StationTimetableElementTableViewCell */,
 			);
 			path = Station;
@@ -1144,6 +1147,7 @@
 				200D7F4126F3492F00656C20 /* StationTimetableElementTests.swift in Sources */,
 				200D7F7226F3C11000656C20 /* StationTableCellViewModelTests.swift in Sources */,
 				206B872126EF671700EA9C60 /* BaseTestCase.swift in Sources */,
+				20FF488026F510A6006C3C95 /* StationViewControllerTests.swift in Sources */,
 				200D7F3C26F33D9300656C20 /* DateTimeFormattingTests.swift in Sources */,
 				20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */,
 				200D7F4626F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,

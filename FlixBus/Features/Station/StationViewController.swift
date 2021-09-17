@@ -16,7 +16,7 @@ final class StationViewController: UIViewController {
     
     // MARK: - Properties
     
-    private(set) var viewModel: StationViewModelProtocol!
+    private var viewModel: StationViewModelProtocol!
     
     // MARK: - View Life Cycle
     
@@ -26,6 +26,10 @@ final class StationViewController: UIViewController {
         configureTableView()
         configureScheduleTypeSegmentedControl()
         title = viewModel.title
+        viewModel.onUpdate = { [weak self] in
+            self?.tableView.reloadData()
+        }
+        viewModel.configureDataSource()
     }
     
     // MARK: - Configurations
