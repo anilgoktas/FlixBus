@@ -5,8 +5,8 @@
 //  Created by Anil Goktas on 9/13/21.
 //
 
-@testable import FlixBus
 import Foundation
+@testable import FlixBus
 
 final class Mocker {
     
@@ -23,7 +23,7 @@ final class Mocker {
         Current.flowCoordinator = flowCoordinator
         Current.logger = logger
         Current.network = network
-        Current.dateTimeFormatting = dateTimeFormatter
+        Current.dateTimeFormatter = dateTimeFormatter
     }
     
 }

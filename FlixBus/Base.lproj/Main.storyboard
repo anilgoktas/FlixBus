@@ -45,6 +45,74 @@
             </objects>
             <point key="canvasLocation" x="2842.0289855072465" y="152.67857142857142"/>
         </scene>
+        <!--Station View Controller-->
+        <scene sceneID="KrV-Ys-opg">
+            <objects>
+                <viewController storyboardIdentifier="StationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pVT-1P-IqX" customClass="StationViewController" customModule="FlixBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="grs-ig-89K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTw-Pq-yvS" userLabel="Segmented Container View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="47"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CoN-zq-ron">
+                                        <rect key="frame" x="107" y="8" width="200" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6Kn-vZ-8Nb"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Arrivals"/>
+                                            <segment title="Departures"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="scheduleTypeDidChange:" destination="pVT-1P-IqX" eventType="valueChanged" id="lPG-Ez-cjL"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CoN-zq-ron" secondAttribute="bottom" constant="8" id="4kr-VP-gZg"/>
+                                    <constraint firstItem="CoN-zq-ron" firstAttribute="centerX" secondItem="aTw-Pq-yvS" secondAttribute="centerX" id="9B2-pJ-IOX"/>
+                                    <constraint firstItem="CoN-zq-ron" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aTw-Pq-yvS" secondAttribute="leading" constant="8" id="CxT-d8-4r3"/>
+                                    <constraint firstItem="CoN-zq-ron" firstAttribute="top" secondItem="aTw-Pq-yvS" secondAttribute="top" constant="8" id="ePa-tx-eVi"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CoN-zq-ron" secondAttribute="trailing" constant="8" id="sdZ-gf-eZ9"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qHE-fe-DBA">
+                                <rect key="frame" x="0.0" y="135" width="414" height="761"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pVT-1P-IqX" id="veb-l9-Dof"/>
+                                    <outlet property="delegate" destination="pVT-1P-IqX" id="CbQ-0x-sjz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UAW-C4-nBE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qHE-fe-DBA" firstAttribute="top" secondItem="aTw-Pq-yvS" secondAttribute="bottom" id="4Nc-P7-7ye"/>
+                            <constraint firstItem="qHE-fe-DBA" firstAttribute="leading" secondItem="UAW-C4-nBE" secondAttribute="leading" id="UFq-VF-p6c"/>
+                            <constraint firstItem="aTw-Pq-yvS" firstAttribute="trailing" secondItem="UAW-C4-nBE" secondAttribute="trailing" id="aRp-Ke-FwF"/>
+                            <constraint firstItem="aTw-Pq-yvS" firstAttribute="leading" secondItem="UAW-C4-nBE" secondAttribute="leading" id="cWW-3G-fbT"/>
+                            <constraint firstItem="aTw-Pq-yvS" firstAttribute="top" secondItem="UAW-C4-nBE" secondAttribute="top" id="eNy-a5-ksp"/>
+                            <constraint firstAttribute="bottom" secondItem="qHE-fe-DBA" secondAttribute="bottom" id="hGw-LA-9Yv"/>
+                            <constraint firstItem="qHE-fe-DBA" firstAttribute="trailing" secondItem="UAW-C4-nBE" secondAttribute="trailing" id="mNB-bm-75e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ZC-Sz-1rF">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scheduleTypeSegmentedControl" destination="CoN-zq-ron" id="JOE-Vl-h7n"/>
+                        <outlet property="tableView" destination="qHE-fe-DBA" id="BzN-Jc-xKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZq-Xu-Lbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3771.0144927536235" y="152.67857142857142"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

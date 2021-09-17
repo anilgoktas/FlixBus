@@ -19,9 +19,10 @@ final class FlowCoordinator: FlowCoordinating {
     
     // MARK: - Properties
     
-    private(set) var rootViewController: UIViewController?
-    
+    private var navigationController: BaseNavigationController?
     private var stationsViewController: StationsViewController?
+    
+    var rootViewController: UIViewController? { navigationController }
     
     // MARK: - Life Cycle
     
@@ -33,13 +34,16 @@ final class FlowCoordinator: FlowCoordinating {
         }
         self.stationsViewController = stationsViewController
         
-        rootViewController = BaseNavigationController(rootViewController: stationsViewController)
+        navigationController = BaseNavigationController(rootViewController: stationsViewController)
     }
     
     // MARK: - Station
     
     private func showStation(_ station: Station) {
-        print("will show station")
+        let repository = StationTimetableRepository(station: station)
+        let viewModel = StationViewModel(repository: repository)
+        let viewController = StationViewController.instantiate(viewModel: viewModel)
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

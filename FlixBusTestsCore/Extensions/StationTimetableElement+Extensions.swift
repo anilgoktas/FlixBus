@@ -16,9 +16,9 @@ extension StationTimetableElement {
     ) -> StationTimetableElement {
         StationTimetableElement(
             lineCode: "L041",
-            direction: "Poznań",
             dateTime: dateTime,
             briefRoute: "Berlin central bus station → Berlin Südkreuz → Berlin Airport BER, T 1/2 → Poznań",
+            lineAndDirection: "Route 041 direction Poznań",
             route: route
         )
     }
@@ -29,9 +29,9 @@ extension StationTimetableElement {
     ) -> StationTimetableElement {
         StationTimetableElement(
             lineCode: "L050",
-            direction: "Hamburg ZOB",
             dateTime: dateTime,
             briefRoute: "Berlin central bus station → Hamburg ZOB",
+            lineAndDirection: "Route 050 direction Hamburg ZOB",
             route: route
         )
     }
@@ -42,9 +42,9 @@ extension StationTimetableElement {
     ) -> StationTimetableElement {
         StationTimetableElement(
             lineCode: "N81",
-            direction: "Brussels-North station",
             dateTime: dateTime,
             briefRoute: "Berlin central bus station → Hanover → Enschede → Arnhem → Nijmegen → Eindhoven → Antwerp → Brussels-North station",
+            lineAndDirection: "Route N81 direction Brussels-North station",
             route: route
         )
     }

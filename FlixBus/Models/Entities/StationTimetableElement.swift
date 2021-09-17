@@ -13,30 +13,29 @@ struct StationTimetableElement {
     // MARK: - Properties
     
     let lineCode: String
-    let direction: String
     let dateTime: DateTime
     let briefRoute: String
+    let lineAndDirection: String
     let route: [Station]
     
     // MARK: - Life Cycle
     
     init(
         lineCode: String,
-        direction: String,
         dateTime: DateTime,
         briefRoute: String,
+        lineAndDirection: String,
         route: [Station]
     ) {
         self.lineCode = lineCode
-        self.direction = direction
         self.dateTime = dateTime
         self.briefRoute = briefRoute
+        self.lineAndDirection = lineAndDirection
         self.route = route
     }
     
     init?(json: JSON) {
         lineCode = json[CodingKeys.lineCode.rawValue].stringValue
-        direction = json[CodingKeys.direction.rawValue].stringValue
         
         guard let dateTime = DateTime(json: json[CodingKeys.dateTime.rawValue]) else {
             return nil
@@ -44,6 +43,7 @@ struct StationTimetableElement {
         self.dateTime = dateTime
         
         briefRoute = json[CodingKeys.briefRoute.rawValue].stringValue
+        lineAndDirection = json[CodingKeys.lineAndDirection.rawValue].stringValue
         route = json[CodingKeys.route.rawValue].arrayValue.map { Station(json: $0) }
     }
     
@@ -55,9 +55,9 @@ extension StationTimetableElement {
     
     enum CodingKeys: String, CodingKey {
         case lineCode = "line_code"
-        case direction
         case dateTime = "datetime"
         case briefRoute = "through_the_stations"
+        case lineAndDirection = "line_direction"
         case route
     }
     

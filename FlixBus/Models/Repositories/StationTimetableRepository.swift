@@ -10,6 +10,7 @@ import Combine
 
 // sourcery: AutoMockable
 protocol StationTimetableRepositoryProtocol {
+    var station: Station { get }
     var arrivals: [StationTimetableElement] { get }
     var departures: [StationTimetableElement] { get }
     
@@ -25,12 +26,12 @@ final class StationTimetableRepository: StationTimetableRepositoryProtocol {
     
     // MARK: Computed
     
+    let station: Station
     var arrivals: [StationTimetableElement] { timetable.arrivals }
     var departures: [StationTimetableElement] { timetable.departures }
     
     // MARK: Private
     
-    private let station: Station
     private let networkRouter: StationTimetableNetworkRouting
     
     private var timetable: StationTimetable = .makeEmpty()

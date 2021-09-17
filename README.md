@@ -13,13 +13,10 @@
 
 ## Project Notes
 
-### Missing Features & Frameworks
+### Environment
 
-- Accessibility
-- Dark Mode
-- iPadOS UI improvements
-- Linting (e.g. SwiftLint)
-- Dynamic stations listing
+- Developed using Xcode 13 RC
+- Snapshot tests implemented using `iPhone 13` simulator.
 
 ### Project Structure
 
@@ -38,11 +35,15 @@
 
 - `Environment` used as a dependency container and is being mocked while testing (`FlixBusTestsCore/Mocker.swift`). Original idea belongs to `pointfree.co`
 
-## TODO
+### Missing Features & Frameworks
 
-- Stations/station screen segmented control with arrival / departure mode?
+- Accessibility
+    - Dynamic Type
+- Dark Mode
+- iPadOS UI improvements
+- Linting (e.g. SwiftLint)
+- Dynamic stations listing
 
-- Station ViewModel
-    - Check possible dates, format and use that string as a key
-    - Use strings as headers and its elements as table cells
-    - Arrival/departure enum `ScheduleType`
+### Known Issues
+
+- `StationTimetableSectionHeaderView` logs a warning related to using background color. It gets fixed when NIB is not used and it could be related to Xcode 13 RC as well. We should keep an eye on it.
