@@ -35,6 +35,7 @@
 ### Code Structure
 
 - `Environment` used as a dependency container and is being mocked while testing (`FlixBusTestsCore/Mocker.swift`). Original idea belongs to `pointfree.co`
+- `FlowCoordinator` manages the window and coordinates the flow. It's configured on the `SceneDelegate` class.
 
 ### Missing Features & Frameworks
 
