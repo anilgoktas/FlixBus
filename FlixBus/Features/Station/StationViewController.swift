@@ -16,7 +16,7 @@ final class StationViewController: UIViewController {
     
     // MARK: - Properties
     
-    private var viewModel: StationViewModelProtocol!
+    private(set) var viewModel: StationViewModelProtocol!
     
     // MARK: - View Life Cycle
     

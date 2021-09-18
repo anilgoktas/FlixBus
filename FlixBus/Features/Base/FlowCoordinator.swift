@@ -5,7 +5,6 @@
 //  Created by Anil Goktas on 9/17/21.
 //
 
-import Foundation
 import UIKit
 
 // sourcery: AutoMockable
@@ -15,14 +14,12 @@ protocol FlowCoordinating {
     func configure()
 }
 
-#warning("How to test coordinator? show station etc. make stationsVC internal")
-
 final class FlowCoordinator: FlowCoordinating {
     
     // MARK: - Properties
     
-    private var navigationController: BaseNavigationController?
-    private var stationsViewController: StationsViewController?
+    private(set) var navigationController: BaseNavigationController?
+    private(set) var stationsViewController: StationsViewController?
     
     var rootViewController: UIViewController? { navigationController }
     

@@ -77,6 +77,7 @@
 		20B243A926F48D1500324F6F /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */; };
 		20B243AA26F48D1700324F6F /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */; };
 		20B243AE26F493E800324F6F /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B243AD26F493E800324F6F /* FlowCoordinator.swift */; };
+		20D990BA26F5E54600EA4793 /* FlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D990B926F5E54600EA4793 /* FlowCoordinatorTests.swift */; };
 		20EB9F0626F49FBA001C0E18 /* BaseUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F0526F49FBA001C0E18 /* BaseUITestCase.swift */; };
 		20EB9F0A26F4A5FE001C0E18 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F0926F4A5FE001C0E18 /* StationViewController.swift */; };
 		20EB9F0C26F4A68E001C0E18 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F0B26F4A68E001C0E18 /* StationViewModel.swift */; };
@@ -191,6 +192,7 @@
 		20B243A626F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		20B243AD26F493E800324F6F /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		20D990B926F5E54600EA4793 /* FlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorTests.swift; sourceTree = "<group>"; };
 		20EB9F0526F49FBA001C0E18 /* BaseUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITestCase.swift; sourceTree = "<group>"; };
 		20EB9F0926F4A5FE001C0E18 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		20EB9F0B26F4A68E001C0E18 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 		200D7F6E26F3C0F300656C20 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				20D990B826F5E52D00EA4793 /* Base */,
 				200D7F6F26F3C0FC00656C20 /* Stations */,
 				20EB9F1426F4C3ED001C0E18 /* Station */,
 			);
@@ -615,6 +618,14 @@
 				200D7F3B26F33D9300656C20 /* DateTimeFormattingTests.swift */,
 			);
 			path = DateTime;
+			sourceTree = "<group>";
+		};
+		20D990B826F5E52D00EA4793 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				20D990B926F5E54600EA4793 /* FlowCoordinatorTests.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		20EB9F0426F49FAA001C0E18 /* Base */ = {
@@ -1164,6 +1175,7 @@
 				20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */,
 				200D7F4626F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,
 				200D7F7826F3DBF400656C20 /* StationsViewModelTests.swift in Sources */,
+				20D990BA26F5E54600EA4793 /* FlowCoordinatorTests.swift in Sources */,
 				20A3BC0526F091CA0098F097 /* DateTimeTests.swift in Sources */,
 				200D7F5926F3709100656C20 /* StationTimetableTests.swift in Sources */,
 				200D7F3F26F3488A00656C20 /* StationTests.swift in Sources */,

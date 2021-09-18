@@ -47,5 +47,6 @@
 
 ### Known Issues
 
+- `GitFlow` is not used in repository.
 - `StationTimetableSectionHeaderView` logs a warning related to using background color. It gets fixed when NIB is not used and it could be related to Xcode 13 RC as well. We should keep an eye on it.
 - UI/UX part is also not ideal.
