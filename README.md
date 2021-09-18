@@ -40,10 +40,11 @@
 ### Missing Features & Frameworks
 
 - Accessibility
-    - Dynamic Type
-- Dark Mode
+    - Dynamic type
+- Dark mode
 - iPadOS UI improvements
 - Linting (e.g. SwiftLint)
+- Local database
 - Dynamic stations listing
 
 ### Known Issues
