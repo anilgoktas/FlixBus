@@ -51,6 +51,8 @@
 		20138E3C26EF657B00A358D5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3B26EF657B00A358D5 /* UIView+Extensions.swift */; };
 		20138E4026EF661200A358D5 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3F26EF661200A358D5 /* Mock.generated.swift */; };
 		20138E4126EF661200A358D5 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3F26EF661200A358D5 /* Mock.generated.swift */; };
+		204FE9EB26F531E700A01804 /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204FE9EA26F531E700A01804 /* UIControl+Extensions.swift */; };
+		204FE9EC26F531E700A01804 /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204FE9EA26F531E700A01804 /* UIControl+Extensions.swift */; };
 		206B871D26EF66A600EA9C60 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3D26EF65B100A358D5 /* Mocker.swift */; };
 		206B871E26EF66A600EA9C60 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138E3D26EF65B100A358D5 /* Mocker.swift */; };
 		206B872126EF671700EA9C60 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206B872026EF671600EA9C60 /* BaseTestCase.swift */; };
@@ -87,6 +89,8 @@
 		20EB9F2226F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F2126F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift */; };
 		20EB9F2526F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F2426F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift */; };
 		20FF488026F510A6006C3C95 /* StationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */; };
+		20FF488226F51D41006C3C95 /* StationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF488126F51D41006C3C95 /* StationViewModelTests.swift */; };
+		20FF488426F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF488326F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift */; };
 		54B843723782B5E275840B1E /* Pods_FlixBus_FlixBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */; };
 		6E5BE49FB9B54E873F991BC9 /* Pods_FlixBusSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BE38844E235980649A18C /* Pods_FlixBusSnapshotTests.framework */; };
 		F3A8EDE062B498293B57E028 /* Pods_FlixBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD343623B31498E5E88FF83 /* Pods_FlixBusTests.framework */; };
@@ -157,6 +161,7 @@
 		20138E3B26EF657B00A358D5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		20138E3D26EF65B100A358D5 /* Mocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
 		20138E3F26EF661200A358D5 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		204FE9EA26F531E700A01804 /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
 		206B872026EF671600EA9C60 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		206B872326EF674900EA9C60 /* BaseSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSnapshotTestCase.swift; sourceTree = "<group>"; };
 		206B872526EF696A00EA9C60 /* NetworkAuthorizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAuthorizing.swift; sourceTree = "<group>"; };
@@ -198,6 +203,8 @@
 		20EB9F2126F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTableCellViewModel.swift; sourceTree = "<group>"; };
 		20EB9F2426F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTableCellViewModelTests.swift; sourceTree = "<group>"; };
 		20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewControllerTests.swift; sourceTree = "<group>"; };
+		20FF488126F51D41006C3C95 /* StationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModelTests.swift; sourceTree = "<group>"; };
+		20FF488326F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		249CE2182B5C9E9166185B65 /* Pods-FlixBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus.release.xcconfig"; path = "Target Support Files/Pods-FlixBus/Pods-FlixBus.release.xcconfig"; sourceTree = "<group>"; };
 		2B4E704F466FA7C3D89CE8C6 /* Pods-FlixBus-FlixBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixBus-FlixBusUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixBus-FlixBusUITests/Pods-FlixBus-FlixBusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A004B417E0E8894C4B3420C /* Pods_FlixBus_FlixBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixBus_FlixBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +272,7 @@
 				200D7F5526F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift */,
 				200D7F5B26F391AC00656C20 /* StationTimetableElement+Extensions.swift */,
 				20B243A826F48D1500324F6F /* XCTestCase+Extensions.swift */,
+				204FE9EA26F531E700A01804 /* UIControl+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -630,6 +638,7 @@
 		20EB9F1426F4C3ED001C0E18 /* Station */ = {
 			isa = PBXGroup;
 			children = (
+				20FF488126F51D41006C3C95 /* StationViewModelTests.swift */,
 				20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */,
 				20EB9F2326F4D3F1001C0E18 /* StationTimetableElementTableViewCell */,
 			);
@@ -641,6 +650,7 @@
 			children = (
 				20EB9F1B26F4C4C7001C0E18 /* StationTimetableSectionHeaderView */,
 				207B22E626F500AE000C1829 /* StationTimetableElementTableViewCell */,
+				20FF488326F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift */,
 			);
 			path = Station;
 			sourceTree = "<group>";
@@ -1141,8 +1151,10 @@
 				200D7F5C26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */,
 				200D7F5126F36B6200656C20 /* StationTimetableRepositoryTests.swift in Sources */,
 				200D7F4E26F3598500656C20 /* StationTimetableNetworkRouterTests.swift in Sources */,
+				20FF488226F51D41006C3C95 /* StationViewModelTests.swift in Sources */,
 				20B243AA26F48D1700324F6F /* XCTestCase+Extensions.swift in Sources */,
 				200D7F5326F36C1700656C20 /* Station+Extensions.swift in Sources */,
+				204FE9EB26F531E700A01804 /* UIControl+Extensions.swift in Sources */,
 				20EB9F2526F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift in Sources */,
 				200D7F4126F3492F00656C20 /* StationTimetableElementTests.swift in Sources */,
 				200D7F7226F3C11000656C20 /* StationTableCellViewModelTests.swift in Sources */,
@@ -1173,9 +1185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B243A726F48A5C00324F6F /* StationsViewControllerSnapshotTests.swift in Sources */,
+				20FF488426F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift in Sources */,
 				200D7F5726F36D6300656C20 /* StationTimetableNetworkRouter+Extensions.swift in Sources */,
 				20EB9F1A26F4C4B4001C0E18 /* StationTimetableSectionHeaderViewSnapshotTests.swift in Sources */,
 				20B243A926F48D1500324F6F /* XCTestCase+Extensions.swift in Sources */,
+				204FE9EC26F531E700A01804 /* UIControl+Extensions.swift in Sources */,
 				200D7F5D26F391AC00656C20 /* StationTimetableElement+Extensions.swift in Sources */,
 				200D7F6D26F3B89600656C20 /* StationTableViewCellSnapshotTests.swift in Sources */,
 				200D7F4726F34BFD00656C20 /* DateTime+Extensions.swift in Sources */,

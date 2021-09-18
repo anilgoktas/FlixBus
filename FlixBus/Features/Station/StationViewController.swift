@@ -41,6 +41,7 @@ final class StationViewController: UIViewController {
                 forSegmentAt: scheduleType.rawValue
             )
         }
+        scheduleTypeSegmentedControl.selectedSegmentIndex = viewModel.scheduleType.rawValue
     }
     
 }

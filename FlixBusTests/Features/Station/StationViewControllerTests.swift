@@ -20,6 +20,8 @@ final class StationViewControllerTests: BaseTestCase {
         try super.setUpWithError()
         
         viewModel.given(.title(getter: "Title"))
+        viewModel.given(.scheduleType(getter: .arrivals))
+        viewModel.given(.numberOfSections(getter: 0))
     }
     
     // MARK: - Factory
@@ -49,6 +51,43 @@ extension StationViewControllerTests {
         XCTAssertNotNil(subject.tableView)
         XCTAssertTrue(subject.tableView.dataSource === subject)
         XCTAssertTrue(subject.tableView.delegate === subject)
+    }
+    
+    func test_IBActions() throws {
+        // Given
+        let subject = makeSubject()
+        
+        // When & Then
+        try subject.scheduleTypeSegmentedControl.validateAndPerform(.valueChanged)
+    }
+    
+    func test_scheduleTypeSegmentedControl_initialValueShouldEqualToViewModel() {
+        // Given
+        let scheduleType = StationViewModel.ScheduleType.departures
+        viewModel.given(.scheduleType(getter: scheduleType))
+        
+        // When
+        let subject = makeSubject()
+        
+        // Then
+        subject.scheduleTypeSegmentedControl.selectedSegmentIndex = scheduleType.rawValue
+    }
+    
+    func test_scheduleTypeSegmentedControl_valueChanged() throws {
+        // Given
+        let subject = makeSubject()
+        
+        // When & Then
+        let firstScheduleType = StationViewModel.ScheduleType.departures
+        subject.scheduleTypeSegmentedControl.selectedSegmentIndex = firstScheduleType.rawValue
+        try subject.scheduleTypeSegmentedControl.validateAndPerform(.valueChanged)
+        viewModel.verify(.scheduleType(set: .value(firstScheduleType)))
+        
+        // When & Then
+        let secondScheduleType = StationViewModel.ScheduleType.arrivals
+        subject.scheduleTypeSegmentedControl.selectedSegmentIndex = secondScheduleType.rawValue
+        try subject.scheduleTypeSegmentedControl.validateAndPerform(.valueChanged)
+        viewModel.verify(.scheduleType(set: .value(secondScheduleType)))
     }
     
     func test_tableViewDataSource() throws {

@@ -15,6 +15,8 @@ protocol FlowCoordinating {
     func configure()
 }
 
+#warning("How to test coordinator? show station etc. make stationsVC internal")
+
 final class FlowCoordinator: FlowCoordinating {
     
     // MARK: - Properties

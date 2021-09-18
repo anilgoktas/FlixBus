@@ -29,6 +29,7 @@
 - `Logging` folder includes logger structure for any third party integrations.
 - `Network` layer doesn't have any unit tests on purpose in order not to bloat unit testing project. 
     - It would be nice if we can isolate as a separate framework. 
+    - Network stubber framework would be useful for unit testing purposes as well.
 - `Extensions` folder has all the extensions, ideally we could create subfolders for each framework (UIKit, Foundation etc.)
 
 ### Code Structure
@@ -47,3 +48,4 @@
 ### Known Issues
 
 - `StationTimetableSectionHeaderView` logs a warning related to using background color. It gets fixed when NIB is not used and it could be related to Xcode 13 RC as well. We should keep an eye on it.
+- UI/UX part is also not ideal.
