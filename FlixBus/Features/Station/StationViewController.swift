@@ -67,7 +67,8 @@ extension StationViewController: UITableViewDataSource {
     private func configureTableView() {
         // Prevent crashes for iPad apps running on Apple Silicon
         // [Source](https://twitter.com/ChristianSelig/status/1440477444843053059)
-        if #available(iOS 15.0, *), !ProcessInfo.processInfo.isiOSAppOnMac {
+        // [Suggested Fix](https://twitter.com/AirspeedSwift/status/1441446953468846088)
+        if #available(iOS 15.0, *), ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 15 {
             tableView.sectionHeaderTopPadding = 0
         }
         tableView.register(R.nib.stationTimetableElementTableViewCell)
