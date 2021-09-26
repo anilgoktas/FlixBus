@@ -14,9 +14,9 @@ final class StationTimetableNetworkRouterTests: BaseTestCase {
     func test_fetchTimetable_shouldUseNetworkSession() {
         // Given
         let subject = StationTimetableNetworkRouter()
-        let future = Future<JSON, Error> { promise in
-            promise(.success(JSON()))
-        }.eraseToAnyPublisher()
+        let future = Just(JSON())
+            .setFailureType(to: Error.self)
+            .eraseToAnyPublisher()
         
         network.given(.perform(urlRequest: .any, willReturn: future))
         

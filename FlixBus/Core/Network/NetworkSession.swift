@@ -20,9 +20,9 @@ extension NetworkSession {
             let urlRequest = try request.urlRequest()
             return perform(urlRequest: urlRequest)
         } catch {
-            return Future<JSON, Error> { promise in
-                promise(.failure(error))
-            }.eraseToAnyPublisher()
+            return Result<JSON, Error>.failure(error)
+                .publisher
+                .eraseToAnyPublisher()
         }
     }
     

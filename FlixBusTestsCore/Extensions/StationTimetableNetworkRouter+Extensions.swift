@@ -14,17 +14,17 @@ extension StationTimetableNetworkRouter {
     static func makeStubFetchPublisher(
         _ response: Fetch.Response = Fetch.Response(timetable: .makeEmpty())
     ) -> AnyPublisher<Fetch.Response, Error> {
-        Future<Fetch.Response, Error> { promise in
-            promise(.success(response))
-        }.eraseToAnyPublisher()
+        Just(response)
+            .setFailureType(to: Error.self)
+            .eraseToAnyPublisher()
     }
     
     static func makeStubFetchPublisher(
         error: Error
     ) -> AnyPublisher<Fetch.Response, Error> {
-        Future<Fetch.Response, Error> { promise in
-            promise(.failure(error))
-        }.eraseToAnyPublisher()
+        Result<Fetch.Response, Error>.failure(error)
+            .publisher
+            .eraseToAnyPublisher()
     }
     
 }
