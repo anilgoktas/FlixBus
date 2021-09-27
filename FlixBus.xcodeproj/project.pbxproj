@@ -89,6 +89,7 @@
 		20EB9F2026F4C831001C0E18 /* StationTimetableElementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EB9F1E26F4C831001C0E18 /* StationTimetableElementTableViewCell.xib */; };
 		20EB9F2226F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F2126F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift */; };
 		20EB9F2526F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB9F2426F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift */; };
+		20F59A4B2701B4A800C27D09 /* Just+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F59A4A2701B4A800C27D09 /* Just+Extensions.swift */; };
 		20FF488026F510A6006C3C95 /* StationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */; };
 		20FF488226F51D41006C3C95 /* StationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF488126F51D41006C3C95 /* StationViewModelTests.swift */; };
 		20FF488426F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF488326F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift */; };
@@ -204,6 +205,7 @@
 		20EB9F1E26F4C831001C0E18 /* StationTimetableElementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTimetableElementTableViewCell.xib; sourceTree = "<group>"; };
 		20EB9F2126F4C867001C0E18 /* StationTimetableElementTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTableCellViewModel.swift; sourceTree = "<group>"; };
 		20EB9F2426F4D412001C0E18 /* StationTimetableElementTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimetableElementTableCellViewModelTests.swift; sourceTree = "<group>"; };
+		20F59A4A2701B4A800C27D09 /* Just+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Just+Extensions.swift"; sourceTree = "<group>"; };
 		20FF487F26F510A6006C3C95 /* StationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewControllerTests.swift; sourceTree = "<group>"; };
 		20FF488126F51D41006C3C95 /* StationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModelTests.swift; sourceTree = "<group>"; };
 		20FF488326F52D2F006C3C95 /* StationViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 				206B872726EF6A6300EA9C60 /* Result+Extensions.swift */,
 				200D7F4226F3496100656C20 /* SwiftyJSON+Extensions.swift */,
 				200D7F5E26F3931100656C20 /* Date+Extensions.swift */,
+				20F59A4A2701B4A800C27D09 /* Just+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1145,6 +1148,7 @@
 				20138E2626EF644600A358D5 /* Logger.swift in Sources */,
 				20EB9F1026F4C233001C0E18 /* StationTimetableSectionHeaderView.swift in Sources */,
 				206B872826EF6A6300EA9C60 /* Result+Extensions.swift in Sources */,
+				20F59A4B2701B4A800C27D09 /* Just+Extensions.swift in Sources */,
 				20A3BBF926EFCC7B0098F097 /* StationTimetableElement.swift in Sources */,
 				20138E2F26EF64C200A358D5 /* NetworkResponse.swift in Sources */,
 				20138E3C26EF657B00A358D5 /* UIView+Extensions.swift in Sources */,

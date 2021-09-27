@@ -12,7 +12,7 @@ import Combine
 extension StationTimetableNetworkRouter {
     
     static func makeStubFetchPublisher(
-        _ response: Fetch.Response = Fetch.Response(timetable: .makeEmpty())
+        _ response: Fetch.Response = .init(timetable: .makeEmpty())
     ) -> AnyPublisher<Fetch.Response, Error> {
         Just(response)
             .setFailureType(to: Error.self)
@@ -22,8 +22,8 @@ extension StationTimetableNetworkRouter {
     static func makeStubFetchPublisher(
         error: Error
     ) -> AnyPublisher<Fetch.Response, Error> {
-        Result<Fetch.Response, Error>.failure(error)
-            .publisher
+        Just(error)
+            .setSuccessType(to: Fetch.Response.self)
             .eraseToAnyPublisher()
     }
     

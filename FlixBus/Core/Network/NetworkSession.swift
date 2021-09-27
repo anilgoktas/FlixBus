@@ -20,8 +20,8 @@ extension NetworkSession {
             let urlRequest = try request.urlRequest()
             return perform(urlRequest: urlRequest)
         } catch {
-            return Result<JSON, Error>.failure(error)
-                .publisher
+            return Just(error)
+                .setSuccessType(to: JSON.self)
                 .eraseToAnyPublisher()
         }
     }
