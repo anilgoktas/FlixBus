@@ -1,14 +1,9 @@
-## Feedback
-
-- First of all thank you for creating this assignment.
-- We could provide RGB values of the colors on the navigation bar and table header view background for convenience.
-
 ## Dependencies
 
 - `Alamofire` and `SwiftyJSON` used for business layer.
     - `SwiftyJSON` preferred instead of `Codable` as a personal choice in order to implement models quickly.
 - `R.swift` is a code generator for all assets, images, nibs and colors which comes in handy where deleting any of these resources results in a compile error.
-- `SwiftyMocky` is also a code generator using Sourcery under the hood. It creates mock classes conforming `AutoMockable` marked protocols.
+- `SwiftyMocky` is also a code generator using Sourcery under the hood. It creates mock classes conforming protocols which are marked with `AutoMockable`.
 - `iOSSnapshotTestCase` is a snapshot testing framework maintained by Uber and previously Facebook. It will help us for checking table view cells and view controllers. 
 
 ## Project Notes
