@@ -20,9 +20,7 @@ extension NetworkSession {
             let urlRequest = try request.urlRequest()
             return perform(urlRequest: urlRequest)
         } catch {
-            return Just(error)
-                .setSuccessType(to: JSON.self)
-                .eraseToAnyPublisher()
+            return Fail(outputType: JSON.self, failure: error).eraseToAnyPublisher()
         }
     }
     
